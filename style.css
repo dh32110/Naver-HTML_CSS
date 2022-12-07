@@ -1,0 +1,138 @@
+/* global */
+*{
+   box-sizing: border-box;
+}
+
+a{
+   text-decoration: none;
+}
+
+ul{
+   list-style: none;
+}
+/* header */
+.center__align{
+   margin: 0 auto;
+   width: 1080px;
+}
+
+/* 자식 */
+#header__search > h1 {
+   width: 280px;
+   display: inline-block;
+   background-image: url(imgs/naver_main.png);
+   width: 222px;
+   height: 52px;
+   background-position: 0 -162px;
+   background-repeat: no-repeat;
+   background-size: 442px 428px;
+   text-indent: 101%;
+   overflow: hidden;
+   vertical-align: middle;
+}
+/* #header__center h1 {}  ---> 자손 선택자  */
+
+#header__search h2{
+   display: none;
+}
+
+.blind {
+   position: absolute;
+   overflow: hidden;
+   clip: rect(0 0 0 0);
+   margin: -1px;
+   width: 1px;
+   height: 1px;
+}
+
+#header__search fieldset{
+   width: 581px;
+   height: 52px;
+   display: inline-block;
+   margin-left: 20px;
+   padding: 12px 0 12px 10px;
+   border: 2px solid #03cf5d;
+   vertical-align: middle;
+   position: relative;
+}
+
+#header__search fieldset input {
+   border: none;
+   padding: 13px 15px;
+   outline: none;
+   width: 444px;
+   height: 24px;
+   vertical-align: middle;
+}
+
+#header__search fieldset button{
+   width: 49px;
+   height: 49px;
+   border: none;
+   padding: 0;
+   background: #03cf5d;
+   cursor: pointer;
+   position: absolute;
+   right: 0;
+   top: 0;
+}
+
+.search__icon{
+   display: inline-block;
+   background-image: url(imgs/naver_main.png);
+   background-position: -420px -24px;
+   background-size: 442px 428px;
+   background-repeat: no-repeat;
+   width: 22px;
+   height: 22px;
+}
+
+/* navbar */
+nav ul li{
+   display: inline-block;
+}
+
+.nav__set{
+   display: inline-block;
+   background-image: url(imgs/naver_main.png);
+   background-repeat: no-repeat;
+   background-size: 442px 428px;
+}
+
+.nav__item{
+   font-size: 15px;
+   line-height: 30px;
+   font-weight: 700;
+   letter-spacing: -.3px;
+}
+
+.word__green{
+   color: #03cf5d;
+}
+
+.nav__mail{
+   display: inline-block;
+   width: 21px;
+   height: 21px;
+   background-position: -420px -74px;
+   margin: 3px 9px 0 0;
+   vertical-align: middle;
+}
+
+.nav__cafe{
+}
+
+.nav__blog{
+ 
+}
+
+.nav__in{
+   display: block;
+}
+
+.nav__shopping{
+   width: 24px;
+   height: 20px;
+   background-position: -76px -386px;
+   vertical-align: middle;
+}
