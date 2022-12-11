@@ -1,40 +1,29 @@
 /* global */
-*{
+* {
    box-sizing: border-box;
 }
 
-a{
+a {
    text-decoration: none;
+   color: black;
+   background-color: ;
 }
 
-ul{
+ul {
    list-style: none;
 }
-/* header */
-.center__align{
+
+html,
+body {
+   padding: 0;
+   margin: 0;
+}
+
+.center__align {
    margin: 0 auto;
-   width: 1080px;
+   width: 1190px;
 }
 
-/* 자식 */
-#header__search > h1 {
-   width: 280px;
-   display: inline-block;
-   background-image: url(imgs/naver_main.png);
-   width: 222px;
-   height: 52px;
-   background-position: 0 -162px;
-   background-repeat: no-repeat;
-   background-size: 442px 428px;
-   text-indent: 101%;
-   overflow: hidden;
-   vertical-align: middle;
-}
-/* #header__center h1 {}  ---> 자손 선택자  */
-
-#header__search h2{
-   display: none;
-}
 
 .blind {
    position: absolute;
@@ -45,11 +34,109 @@ ul{
    height: 1px;
 }
 
-#header__search fieldset{
-   width: 581px;
-   height: 52px;
+.relative {
+   position: relative;
+}
+
+/* header */
+header {
+   height: 170px;
+}
+
+#header__top {
+   float: right;
+   margin-top: 8px;
+}
+
+.top__linkset {
+   float: left;
+   color: #888;
+   letter-spacing: -1px;
+   font-size: 11px;
+   line-height: 23px;
+}
+
+.link__icon {
    display: inline-block;
-   margin-left: 20px;
+   width: 26px;
+   height: 26px;
+   background: url(imgs/naver_main.png)  -382px -213px no-repeat;
+   background-size: 442px 428px;
+   vertical-align: middle;
+   margin: -3px 0 0 3px;
+}
+
+.top__bar{
+   float: left;
+   width: 1px;
+   height: 10px;
+   margin: 0 7px;
+   color: #888;
+   background-color: #e4e8eb;
+}
+
+.link__jr{
+   display: inline-block;
+   width: 60px;
+   height: 10px;
+   background: url(imgs/naver_main.png) -264px -296px no-repeat;
+   background-size: 442px 428px;
+   vertical-align: middle;
+   margin: 6px;
+}
+
+.link__jr:hover{
+   display: inline-block;
+   width: 60px;
+   height: 10px;
+   background: url(imgs/naver_main.png) -326px -296px no-repeat;
+   background-size: 442px 428px;
+   vertical-align: middle;
+   margin: 6px;
+}
+
+.link__happy{
+   display: inline-block;
+   width: 34px;
+   height: 11px;
+   background: url(imgs/naver_main.png) -365px -245px no-repeat;
+   background-size: 442px 428px;
+   vertical-align: middle;
+   margin: 6px 3px 2px;
+}
+
+.link__happy:hover{
+   display: inline-block;
+   width: 34px;
+   height: 11px;
+   background: url(imgs/naver_main.png) -380px -199px no-repeat;
+   background-size: 442px 428px;
+   vertical-align: middle;
+   margin: 6px 3px 2px;
+}
+
+#header__search {
+   clear: both;
+   padding-top: 12px;
+}
+
+#header__search h1 {
+   width: 198px;
+   height: 48px;
+   display: inline-block;
+   background: url(imgs/naver_main.png) 0 -162px no-repeat;
+   background-size: 390px 428px;
+   vertical-align: middle;
+   position: relative;
+   top: -5px;
+   left: 1px;
+}
+
+#header__search fieldset {
+   width: 521px;
+   height: 49px;
+   display: inline-block;
+   margin-left: 18px;
    padding: 12px 0 12px 10px;
    border: 2px solid #03cf5d;
    vertical-align: middle;
@@ -58,26 +145,47 @@ ul{
 
 #header__search fieldset input {
    border: none;
-   padding: 13px 15px;
+   padding: 0;
    outline: none;
-   width: 444px;
-   height: 24px;
-   vertical-align: middle;
+   width: 395px;
+   height: 23px;
+   vertical-align: top;
 }
 
-#header__search fieldset button{
+#header__search fieldset button {
    width: 49px;
    height: 49px;
    border: none;
    padding: 0;
    background: #03cf5d;
-   cursor: pointer;
    position: absolute;
-   right: 0;
-   top: 0;
+   right: -2px;
+   top: -2px;
 }
 
-.search__icon{
+#search__keybord {
+   background-image: url(https://s.pstatic.net/static/www/img/uit/2019/sp_search.svg);
+   background-repeat: no-repeat;
+   background-position: -33px -60px;
+   width: 19px;
+   height: 11px;
+   display: inline-block;
+   margin: 0 6px;
+   vertical-align: middle;
+}
+
+#search__history {
+   background-image: url(https://s.pstatic.net/static/www/img/uit/2019/sp_search.svg);
+   background-repeat: no-repeat;
+   background-position: -87px -60px;
+   width: 9px;
+   height: 4px;
+   display: inline-block;
+   margin: 0 6px;
+   vertical-align: middle;
+}
+
+.search__icon {
    display: inline-block;
    background-image: url(imgs/naver_main.png);
    background-position: -420px -24px;
@@ -85,54 +193,164 @@ ul{
    background-repeat: no-repeat;
    width: 22px;
    height: 22px;
+   margin: 14px;
+}
+
+/* navbar global */
+.word__green {
+   color: #03cf5d;
+}
+
+.nav__item {
+   font-size: 15px;
+   line-height: 30px;
+   font-weight: 700;
+   letter-spacing: -.3px;
+   margin-left: 12px;
 }
 
 /* navbar */
-nav ul li{
-   display: inline-block;
+nav {
+   height: 52px;
+   border-top: 1px solid #d1d8e4;
+   border-bottom: 1px solid #d1d8e4;
 }
 
-.nav__set{
-   display: inline-block;
-   background-image: url(imgs/naver_main.png);
-   background-repeat: no-repeat;
-   background-size: 442px 428px;
+.nav__menu-black{
+   color: black;
 }
 
-.nav__item{
+nav ul {
+   display: inline-block;
+   margin: 0;
+   padding: 10px 0 0 4px;
+   list-style: none;
    font-size: 15px;
    line-height: 30px;
    font-weight: 700;
    letter-spacing: -.3px;
 }
 
-.word__green{
-   color: #03cf5d;
+nav li {
+   display: inline-block;
 }
 
-.nav__mail{
+.nav__set {
    display: inline-block;
+   background-image: url(imgs/naver_main.png);
+   background-repeat: no-repeat;
+   background-size: 442px 428px;
+   vertical-align: middle;
+   margin-left: 10px;
+}
+
+.nav__mail {
    width: 21px;
    height: 21px;
    background-position: -420px -74px;
-   margin: 3px 9px 0 0;
-   vertical-align: middle;
 }
 
-.nav__cafe{
-}
-
-.nav__blog{
- 
-}
-
-.nav__in{
-   display: block;
-}
-
-.nav__shopping{
+.nav__shopping {
    width: 24px;
    height: 20px;
-   background-position: -76px -386px;
+   background-position: -76px -388px;
+}
+
+.nav__live {
+   width: 54px;
+   height: 20px;
+   background-position: -209px -269px;
+}
+
+.nav__tv {
+   width: 12px;
+   height: 14px;
+   background-position: -256px -212px;
+}
+
+.nav__divider {
+   display: inline-block;
+   margin: 18px 2px 0;
+   width: 1px;
+   height: 14px;
+   background: #ebeef3;
+}
+
+.more{
+   font-size: 13px;
+   line-height: 30px;
+   font-weight: 400;
+}
+
+.nav__more{
+   display: inline-block;
+   width: 11px;
+   height: 7px;
+   background: url(imgs/naver_main.png) -402px -296px no-repeat;
+   background-size: 442px 428px;
+   margin-left: 7px;
    vertical-align: middle;
+   content: '';
+}
+
+/* main content */
+main{
+   display: inline-block;
+   width: 100%;
+}
+#main__content {
+   padding: 8px 10px;
+   width: 1190px;
+   
+}
+
+.main__ad{
+   display: inline-block;
+   width: 750px;
+   height: 135px;
+   background: url(imgs/main-ad.jpg) no-repeat;
+   background-size: 750px 135px;
+}
+
+.main__login{
+   display: inline-block;
+   width: 350px;
+   height: 135px;
+   background-color: #888;
+   vertical-align: top;
+}
+
+/* news */
+.news__area{
+   display: inline-block;
+}
+.news__top{
+   display: inline-block;
+   position: relative;
+   width: 750px;
+   height: 49px;
+   border: 1px solid #dae1e6;
+   padding: 12px 15px 11px 15px;
+   line-height: 24px;
+}
+
+.link__news{
+   float: left;
+   padding-right: 12px;
+   margin-left: 7px;
+   font-size: 13px;
+   font-weight: 700;
+   letter-spacing: -.3px;
+}
+
+.link__arrow{
+   display: inline-block;
+   background: url(imgs/naver_main.png) -262px -112px no-repeat;
+   background-size: 442px 428px;
+   width: 6px;
+   height: 10px;
+}
+
+.news__content{
+   display: inline-block;
 }

@@ -12,24 +12,36 @@
 
 <body>
    <header>
-      <!--  가운데 정렬용 div -->
       <div class="center__align">
          <!-- 상단 메인 -->
-         <div>
-            <span>네이버를 시작페이지로</span>
-            <span>쥬니어 네이버</span>
-            <span>해피빈</span>
+         <div id="header__top">
+            <a href="https://help.naver.com/support/welcomePage/guide.help">
+               <span class="top__linkset">네이버를시작페이지로
+                  <span class="link__icon"></span>
+               </span>
+            </a>
+            <span class="top__bar">|</span>
+            <a href="https://jr.naver.com">
+               <span class="top__linkset link__jr"></span>
+               <span class="blind">쥬니어 네이버</span>
+            </a>
+            <a href="https://happybean.naver.com">
+               <span class="top__linkset link__happy"></span>
+               <span class="blind">해피빈</span>
+            </a>
          </div>
          <div id="header__search">
-            <h1>
-               <a href="http://www.naver.com">
+            <a href="http://www.naver.com">
+               <h1>
                   <span class="blind">네이버</span>
-               </a>
-            </h1>
+               </h1>
+            </a>
             <h2 class="blind">검색창</h2>
             <fieldset>
                <legend class="blind">검색</legend>
                <input type="text" />
+               <span id="search__keybord"></span>
+               <span id="search__history"></span>
                <button>
                   <span class="blind">검색</span>
                   <span class="search__icon"></span>
@@ -40,97 +52,189 @@
    </header>
 
    <!-- navbar -->
-   <nav class="center__align">
-      <ul>
-         <li>
-            <a href="https://mail.naver.com"><span class="nav__mail nav__set"></span>
-            <span class="nav__item word__green">메일</span></a></li>
-         <li>
-            <a href="https://section.cafe.naver.com">
-               <span class="nav__cafe nav__set nav__item word__green">카페</span>
-            </a>
-         </li>
-         <li>
-            <a href="https://section.blog.naver.com">
-               <span class="nav__blog nav__set nav__item word__green">블로그</span>
-            </a>
-         </li>
-         <li>
-            <a href="https://kin.naver.com">
-               <span class="nav__in nav__set nav__item word__green">지식iN</span>
-            </a>
-         </li>
-         <li>
-            <span class="nav__shopping nav__set nav__item"></span>
-            <span class="blind">쇼핑</span>
-         </li>
-         <li>
-            <span class="nav__live nav__set"></span>
-            <span class="blind">쇼핑live</span>
-         </li>
-         <li>
-            <span class="nav__pay nav__set"></span>
-            <span class="nav__item word__green">pay</span>
-         </li>
-         <li>
-            <span class="nav__tv nav__set"></span>
-            <span class="blind">tv</span>
-         </li>
-         <li>
-            <span class="nav__dict nav__set"></span>
-            <span class="nav__item">사전</span>
-         </li>
-         <li>
-            <span class="nav__news nav__set"></span>
-            <span class="nav__item">뉴스</span>
-         </li>
-         <li>
-            <span class="nav__security nav__set"></span>
-            <span class="nav__item">증권</span>
-         </li>
-         <li>
-            <span class="nav__house nav__set"></span>
-            <span class="nav__item">부동산</span>
-         </li>
-         <li>
-            <span class="nav__map nav__set"></span>
-            <span class="nav__item">지도</span>
-         </li>
-         <li>
-            <span class="nav__vibe nav__set"></span>
-            <span class="nav__item">VIBE</span>
-         </li>
-         <li>
-            <span class="nav__book nav__set"></span>
-            <span class="nav__item">도서</span>
-         </li>
-         <li>
-            <span class="nav__webtoon nav__set"></span>
-            <span class="nav__item">웹툰</span>
-         </li>
-      </ul>
-   </nav>
-   <main>
-      <h2>실시간 검색어</h2>
+   <nav>
+      <div class="center__align relative">
+         <div id="nav__weather">
+            <h2 class="blind">날씨</h2>
+         </div>
 
-      <h3>연합뉴스</h3>
-      <ol>
-         <li>속보) 몸살 기운있어</li>
-         <li>충격) 프론트 엔드 개발자를 꿈꾸다</li>
-         <li>속보) 졸려</li>
-      </ol>
-      <h3>언론사 목록</h3>
-      <ul>
-         <li><img src="imgs/han.png" alt="한겨례">한겨례</li>
-         <li><img src="imgs/inews.png" alt="아이뉴스">아이뉴스</li>
-         <li><img src="imgs/joongang.png" alt="중앙일보">중앙일보</li>
-      </ul>
-      <h3>로그인</h3>
-      <h3>뉴스</h3>
-      <h3>법률</h3>
-      <h3>쇼핑</h3>
-      <h6>쇼핑</h6>
+         <ul class="nav__menu">
+            <li>
+               <a href="https://mail.naver.com" class="nav__item">
+                  <span class="nav__mail nav__set"></span>
+                  <span class="word__green">메일</span>
+               </a>
+            </li>
+            <li>
+               <a href="https://section.cafe.naver.com">
+                  <span class="nav__cafe nav__set nav__item"></span>
+                  <span class="word__green">카페</span>
+               </a>
+            </li>
+            <li>
+               <a href="https://section.blog.naver.com">
+                  <span class="nav__blog nav__set nav__item"></span>
+                  <span class="word__green">블로그</span>
+               </a>
+            </li>
+            <li>
+               <a href="https://kin.naver.com">
+                  <span class="nav__in nav__set nav__item"></span>
+                  <span class="word__green">지식iN</span>
+               </a>
+            </li>
+            <li>
+               <a href="https://shopping.naver.com">
+                  <span class="nav__shopping nav__set nav__item"></span>
+                  <span class="blind">쇼핑</span>
+               </a>
+            </li>
+            <li>
+               <a href="https://shoppinglive.naver.com/home">
+                  <span class="nav__live nav__set"></span>
+                  <span class="blind">쇼핑live</span>
+               </a>
+            </li>
+            <li>
+               <a href="https://order.pay.naver.com/home">
+                  <span class="nav__pay nav__set nav__item"></span>
+                  <span class="word__green">Pay</span>
+               </a>
+            </li>
+            <li>
+               <a href="https://tv.naver.com/">
+                  <span class="nav__tv nav__set nav__item"></span>
+                  <span class="word__green">TV</span>
+               </a>
+            </li>
+         </ul>
+         <ul class="nav__menu-black">
+            <li>
+               <a href="https://dict.naver.com/">
+                  <span></span>
+                  <span class="nav__dict nav__set nav__item">사전</span>
+               </a>
+            </li>
+            <li>
+               <a href="https://news.naver.com/">
+                  <span></span>
+                  <span class="nav__news nav__set nav__item">뉴스</span>
+               </a>
+            </li>
+            <li>
+               <a href="https://finance.naver.com/">
+                  <span></span>
+                  <span class="nav__finance nav__set nav__item">증권</span>
+               </a>
+            </li>
+            <li>
+               <a href="https://land.naver.com/">
+                  <span></span>
+                  <span class="nav__home nav__set nav__item">부동산</span>
+               </a>
+            </li>
+            <li>
+               <a href="https://map.naver.com/">
+                  <span></span>
+                  <span class="nav__map nav__set nav__item">지도</span>
+               </a>
+            </li>
+            <li>
+               <a href="https://vibe.naver.com/about/">
+                  <span></span>
+                  <span class="nav__vibe nav__set nav__item">VIBE</span>
+               </a>
+            </li>
+            <li>
+               <a href="https://search.shoppimg.naver.com/book/home">
+                  <span></span>
+                  <span class="nav__book nav__set nav__item">도서</span>
+               </a>
+            </li>
+            <li>
+               <a href="https://comic.naver.com/">
+                  <span></span>
+                  <span class="nav__webtoon nav__set nav__item">웹툰</span>
+               </a>
+            </li>
+         </ul>
+
+         <div class="nav__divider"></div>
+         <ul>
+            <li>
+               <a href="#">
+                  <span class="more">더보기</span>
+                  <span class="nav__more"></span>
+               </a>
+            </li>
+         </ul>
+   </nav>
+   <!-- main content -->
+   <main>
+      <div id="main__content" class="center__align">
+         <div class="main__fist">
+            <div class="main__ad"></div>
+            <div class="main__login">로그인</div>
+         </div>
+
+         <div class="news__area">
+            <div class="news__top">
+               <a href="" class="link__news">
+                  <span>연합뉴스</span>
+                  <span class="link__arrow"></span>
+               </a>
+               <a href="">
+                  <span class="news__content">
+                     속보) 프론트 엔드 개발자를 꿈꾸다
+                  </span>
+               </a>
+               <a href="" class="link__qatar"><span>Qatar</span></a>
+               <a href="" class="news__home"><span>뉴스홈</span></a>
+               <a href="" class="news__entertainment"><span>연예</span></a>
+               <a href="" class="news__sports"><span>스포츠</span></a>
+               <a href="" class="news__economy"><span>경제</span></a>
+            </div>
+
+            <div class="news__stand">
+               <h3>뉴스 스탠드</h3>
+               <ul>
+                  <li><img src="imgs/han.png" alt="한겨례">한겨례</li>
+                  <li><img src="imgs/inews.png" alt="아이뉴스">아이뉴스</li>
+                  <li><img src="imgs/joongang.png" alt="중앙일보">중앙일보</li>
+                  <li><img src="imgs/han.png" alt="한겨례">한겨례</li>
+                  <li><img src="imgs/inews.png" alt="아이뉴스">아이뉴스</li>
+                  <li><img src="imgs/joongang.png" alt="중앙일보">중앙일보</li>
+                  <li><img src="imgs/han.png" alt="한겨례">한겨례</li>
+                  <li><img src="imgs/inews.png" alt="아이뉴스">아이뉴스</li>
+                  <li><img src="imgs/joongang.png" alt="중앙일보">중앙일보</li>
+                  <li><img src="imgs/han.png" alt="한겨례">한겨례</li>
+                  <li><img src="imgs/inews.png" alt="아이뉴스">아이뉴스</li>
+                  <li><img src="imgs/joongang.png" alt="중앙일보">중앙일보</li>
+                  <li><img src="imgs/han.png" alt="한겨례">한겨례</li>
+                  <li><img src="imgs/inews.png" alt="아이뉴스">아이뉴스</li>
+                  <li><img src="imgs/joongang.png" alt="중앙일보">중앙일보</li>
+                  <li><img src="imgs/han.png" alt="한겨례">한겨례</li>
+                  <li><img src="imgs/inews.png" alt="아이뉴스">아이뉴스</li>
+                  <li><img src="imgs/joongang.png" alt="중앙일보">중앙일보</li>
+                  <li><img src="imgs/han.png" alt="한겨례">한겨례</li>
+                  <li><img src="imgs/inews.png" alt="아이뉴스">아이뉴스</li>
+                  <li><img src="imgs/joongang.png" alt="중앙일보">중앙일보</li>
+               </ul>
+            </div>
+         </div>
+
+         <div class="side__newsad">
+            <div class="covid">코로나바이러스감염증-19 현황</div>
+            <div class="side__ad"></div>
+         </div>
+         <h3>로그인</h3>
+         <h3>뉴스</h3>
+         <h3>법률</h3>
+         <h3>쇼핑</h3>
+         <h6>쇼핑</h6>
+      </div>
    </main>
+
    <footer>
       <div>공지사항</div>
       <div>Creators</div>
