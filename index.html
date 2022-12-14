@@ -7,7 +7,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="shortcut icon" type="image/x-icon" href="imgs/favicon.ico" />
    <link rel="stylesheet" href="./style.css" />
-   <title>네이버</title>
+   <title>NAVER</title>
 </head>
 
 <body>
@@ -54,10 +54,6 @@
    <!-- navbar -->
    <nav>
       <div class="center__align relative">
-         <div id="nav__weather">
-            <h2 class="blind">날씨</h2>
-         </div>
-
          <ul class="nav__menu">
             <li>
                <a href="https://mail.naver.com" class="nav__item">
@@ -111,49 +107,41 @@
          <ul class="nav__menu-black">
             <li>
                <a href="https://dict.naver.com/">
-                  <span></span>
                   <span class="nav__dict nav__set nav__item">사전</span>
                </a>
             </li>
             <li>
                <a href="https://news.naver.com/">
-                  <span></span>
                   <span class="nav__news nav__set nav__item">뉴스</span>
                </a>
             </li>
             <li>
                <a href="https://finance.naver.com/">
-                  <span></span>
                   <span class="nav__finance nav__set nav__item">증권</span>
                </a>
             </li>
             <li>
                <a href="https://land.naver.com/">
-                  <span></span>
                   <span class="nav__home nav__set nav__item">부동산</span>
                </a>
             </li>
             <li>
                <a href="https://map.naver.com/">
-                  <span></span>
                   <span class="nav__map nav__set nav__item">지도</span>
                </a>
             </li>
             <li>
                <a href="https://vibe.naver.com/about/">
-                  <span></span>
                   <span class="nav__vibe nav__set nav__item">VIBE</span>
                </a>
             </li>
             <li>
                <a href="https://search.shoppimg.naver.com/book/home">
-                  <span></span>
                   <span class="nav__book nav__set nav__item">도서</span>
                </a>
             </li>
             <li>
                <a href="https://comic.naver.com/">
-                  <span></span>
                   <span class="nav__webtoon nav__set nav__item">웹툰</span>
                </a>
             </li>
@@ -167,71 +155,114 @@
                   <span class="nav__more"></span>
                </a>
             </li>
+            <div id="nav__weather">
+               <h2 class="blind">날씨</h2>
+            </div>
          </ul>
+      </div>
    </nav>
    <!-- main content -->
    <main>
       <div id="main__content" class="center__align">
-         <div class="main__fist">
+         <div id="main__left">
+            <!-- 광고 -->
             <div class="main__ad"></div>
-            <div class="main__login">로그인</div>
-         </div>
-
-         <div class="news__area">
-            <div class="news__top">
-               <a href="" class="link__news">
-                  <span>연합뉴스</span>
-                  <span class="link__arrow"></span>
-               </a>
-               <a href="">
-                  <span class="news__content">
-                     속보) 프론트 엔드 개발자를 꿈꾸다
-                  </span>
-               </a>
-               <a href="" class="link__qatar"><span>Qatar</span></a>
-               <a href="" class="news__home"><span>뉴스홈</span></a>
-               <a href="" class="news__entertainment"><span>연예</span></a>
-               <a href="" class="news__sports"><span>스포츠</span></a>
-               <a href="" class="news__economy"><span>경제</span></a>
+            <!-- news -->
+            <div class="news__area">
+               <div class="news__top">
+                  <a href="" class="link__news">
+                     <span>연합뉴스</span>
+                     <span class="link__arrow"></span>
+                  </a>
+                  <a href="">
+                     <span class="news__content">
+                        속보) 프론트 엔드 개발자를 꿈꾸다
+                     </span>
+                  </a>
+                  <div class="news__link">
+                     <a href="" class="link__qatar">
+                        <span class="news__qatar"></span><span class="blind">Qatar</span>
+                     </a>
+                     <a href="" class="news__categories"><span>뉴스홈</span></a>
+                     <a href="" class="news__categories"><span>연예</span></a>
+                     <a href="" class="news__categories"><span>스포츠</span></a>
+                     <a href="" class="news__categories"><span>경제</span></a>
+                  </div>
+               </div>
+               <div class="news__stand">
+                  <div class="stand__top">
+                     <div class="stand__top-left">
+                        <span class="stand__img"></span>
+                        <a href="#">뉴스 스탠드</a>
+                        <span class="stand__link"></span>
+                        <span class="sub__news">구독한 언론사</span>
+                        <span class="all__news">전체언론사</span>
+                     </div>
+                     <div class="stand__top-right">
+                        <span class="menu__list"></span>
+                        <span class="menu__table"></span>
+                        <span class="menu__set"></span>
+                     </div>
+                  </div>
+                  <ul>
+                     <li><img src="imgs/han.png" alt="한겨례"><span class="blind">한겨례</span></li>
+                     <li><img src="imgs/inews.png" alt="아이뉴스"><span class="blind">아이뉴스</span></li>
+                     <li><img src="imgs/joongang.png" alt="중앙일보"><span class="blind">중앙일보</span></li>
+                     <li><img src="imgs/han.png" alt="한겨례"><span class="blind">한겨례</span></li>
+                     <li><img src="imgs/inews.png" alt="아이뉴스"><span class="blind">아이뉴스</span></li>
+                     <li><img src="imgs/joongang.png" alt="중앙일보"><span class="blind">중앙일보</span></li>
+                     <li><img src="imgs/han.png" alt="한겨례"><span class="blind">한겨례</span></li>
+                     <li><img src="imgs/inews.png" alt="아이뉴스"><span class="blind">아이뉴스</span></li>
+                     <li><img src="imgs/joongang.png" alt="중앙일보"><span class="blind">중앙일보</span></li>
+                     <li><img src="imgs/han.png" alt="한겨례"><span class="blind">한겨례</span></li>
+                     <li><img src="imgs/inews.png" alt="아이뉴스"><span class="blind">아이뉴스</span></li>
+                     <li><img src="imgs/joongang.png" alt="중앙일보"><span class="blind">중앙일보</span></li>
+                     <li><img src="imgs/han.png" alt="한겨례"><span class="blind">한겨례</span></li>
+                     <li><img src="imgs/inews.png" alt="아이뉴스"><span class="blind">아이뉴스</span></li>
+                     <li><img src="imgs/joongang.png" alt="중앙일보"><span class="blind">중앙일보</span></li>
+                     <li><img src="imgs/han.png" alt="한겨례"><span class="blind">한겨례</span></li>
+                     <li><img src="imgs/inews.png" alt="아이뉴스"><span class="blind">아이뉴스</span></li>
+                     <li><img src="imgs/joongang.png" alt="중앙일보"><span class="blind">중앙일보</span></li>
+                     <li><img src="imgs/han.png" alt="한겨례"><span class="blind">한겨례</span></li>
+                     <li><img src="imgs/inews.png" alt="아이뉴스"><span class="blind">아이뉴스</span></li>
+                     <li><img src="imgs/joongang.png" alt="중앙일보"><span class="blind">중앙일보</span></li>
+                     <li><img src="imgs/han.png" alt="한겨례"><span class="blind">한겨례</span></li>
+                     <li><img src="imgs/inews.png" alt="아이뉴스"><span class="blind">아이뉴스</span></li>
+                     <li><img src="imgs/joongang.png" alt="중앙일보"><span class="blind">중앙일보</span></li>
+                  </ul>
+               </div>
             </div>
-
-            <div class="news__stand">
-               <h3>뉴스 스탠드</h3>
-               <ul>
-                  <li><img src="imgs/han.png" alt="한겨례">한겨례</li>
-                  <li><img src="imgs/inews.png" alt="아이뉴스">아이뉴스</li>
-                  <li><img src="imgs/joongang.png" alt="중앙일보">중앙일보</li>
-                  <li><img src="imgs/han.png" alt="한겨례">한겨례</li>
-                  <li><img src="imgs/inews.png" alt="아이뉴스">아이뉴스</li>
-                  <li><img src="imgs/joongang.png" alt="중앙일보">중앙일보</li>
-                  <li><img src="imgs/han.png" alt="한겨례">한겨례</li>
-                  <li><img src="imgs/inews.png" alt="아이뉴스">아이뉴스</li>
-                  <li><img src="imgs/joongang.png" alt="중앙일보">중앙일보</li>
-                  <li><img src="imgs/han.png" alt="한겨례">한겨례</li>
-                  <li><img src="imgs/inews.png" alt="아이뉴스">아이뉴스</li>
-                  <li><img src="imgs/joongang.png" alt="중앙일보">중앙일보</li>
-                  <li><img src="imgs/han.png" alt="한겨례">한겨례</li>
-                  <li><img src="imgs/inews.png" alt="아이뉴스">아이뉴스</li>
-                  <li><img src="imgs/joongang.png" alt="중앙일보">중앙일보</li>
-                  <li><img src="imgs/han.png" alt="한겨례">한겨례</li>
-                  <li><img src="imgs/inews.png" alt="아이뉴스">아이뉴스</li>
-                  <li><img src="imgs/joongang.png" alt="중앙일보">중앙일보</li>
-                  <li><img src="imgs/han.png" alt="한겨례">한겨례</li>
-                  <li><img src="imgs/inews.png" alt="아이뉴스">아이뉴스</li>
-                  <li><img src="imgs/joongang.png" alt="중앙일보">중앙일보</li>
-               </ul>
+            <!-- Today read -->
+            <div class="today__read">
+               today__read
             </div>
          </div>
 
-         <div class="side__newsad">
-            <div class="covid">코로나바이러스감염증-19 현황</div>
-            <div class="side__ad"></div>
+         <div id="main__right">
+            <div class="side__newsad">
+               <div class="main__login">로그인</div>
+               <div class="covid">코로나바이러스감염증-19 현황</div>
+               <div class="side__ad"></div>
+            </div>
+            <div class="shopping">
+               <h6>트렌드 쇼핑</h6>
+               <div class="shopping nav">
+                  <ul>
+                     <li>쿠팡</li>
+                     <li>G마켓</li>
+                     <li>옥션</li>
+                     <li>11번가</li>
+                     <li>SSG닷컴</li>
+                     <li>티몬</li>
+                     <li>올리브영</li>
+                     <li>위메프</li>
+                     <li>GS샵</li>
+                     <li>CJ온스타일</li>
+                     <li>패션플러스</li>
+                  </ul>
+               </div>
+            </div>
          </div>
-         <h3>로그인</h3>
-         <h3>뉴스</h3>
-         <h3>법률</h3>
-         <h3>쇼핑</h3>
-         <h6>쇼핑</h6>
       </div>
    </main>
 

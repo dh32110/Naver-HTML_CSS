@@ -214,6 +214,7 @@ nav {
    height: 52px;
    border-top: 1px solid #d1d8e4;
    border-bottom: 1px solid #d1d8e4;
+   padding: 0 30px;
 }
 
 .nav__menu-black{
@@ -241,7 +242,7 @@ nav li {
    background-repeat: no-repeat;
    background-size: 442px 428px;
    vertical-align: middle;
-   margin-left: 10px;
+   margin-left: 2px;
 }
 
 .nav__mail {
@@ -293,14 +294,28 @@ nav li {
    content: '';
 }
 
+#nav__weather{
+   display: inline-block;
+   width: 270px;
+   height: 18px;
+   padding: 17px 0 17px 0;
+   background-color: #03cf5d;
+   vertical-align: top;
+}
+
 /* main content */
+/* main-left */
 main{
    display: inline-block;
    width: 100%;
 }
 #main__content {
-   padding: 8px 10px;
+   padding: 20px 30px;
    width: 1190px;
+   display: flex;
+   justify-content: space-between;
+}
+#main__left{
    
 }
 
@@ -312,17 +327,13 @@ main{
    background-size: 750px 135px;
 }
 
-.main__login{
-   display: inline-block;
-   width: 350px;
-   height: 135px;
-   background-color: #888;
-   vertical-align: top;
+#main__right{
+   padding: 0 20px;
+   margin: 0;
 }
-
-/* news */
 .news__area{
-   display: inline-block;
+   float: left;
+   width: 750px;
 }
 .news__top{
    display: inline-block;
@@ -332,6 +343,7 @@ main{
    border: 1px solid #dae1e6;
    padding: 12px 15px 11px 15px;
    line-height: 24px;
+   background-color: #f7f9fa;
 }
 
 .link__news{
@@ -353,4 +365,153 @@ main{
 
 .news__content{
    display: inline-block;
+   font-size: 13px;
+}
+
+.news__link{
+   float: right;
+}
+
+.news__qatar{
+   display: inline-block;
+   width: 93px;
+   height: 16px;
+   background: url(imgs/naver_main.png) -270px -245px no-repeat;
+   background-size: 442px 428px;
+   vertical-align: middle;
+}
+
+.news__categories{
+   display: inline-block;
+   color: #3565c9;
+   font-size: 13px;
+   font-weight: 700;
+   margin-left: 8px;
+   line-height: 24px;
+}
+
+.stand__top{
+   padding: 22px 0 16px;
+   font-size: 14px;
+   line-height: 18px;
+   width: 750px;
+   height: 56px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.stand__top a{
+   font-weight: 700;
+}
+
+.stand__img{
+   display: inline-block;
+   width: 27px;
+   height: 24px;
+   background: url(imgs/naver_main.png) -272px -342px no-repeat;
+   background-size: 442px 428px;
+   vertical-align: middle;
+   margin: -6px 0 0 0;
+}
+
+.stand__link{
+   display: inline-block;
+   width: 7px;
+   height: 11px;
+   background: url(imgs/naver_main.png) -410px -213px no-repeat;
+   background-size: 442px 428px;
+   margin-left: 6px;
+}
+
+.sub__news{
+   margin-right: 15px;
+}
+
+.all__news{
+   font-weight: 700;
+}
+
+.menu__list{
+   display: inline-block;
+   width: 14px;
+   height: 13px;
+   background: url(imgs/naver_main.png) -244px -310px no-repeat;
+   background-size: 446px 428px;
+   margin: 0 9px;
+}
+
+.menu__table{
+   display: inline-block;
+   width: 13px;
+   height: 13px;
+   background: url(imgs/naver_main.png) -276px -310px no-repeat;
+   background-size: 442px 428px;
+   margin: 0 9px 0 0;
+}
+
+.menu__set{
+   display: inline-block;
+   width: 15px;
+   height: 15px;
+   background: url(imgs/naver_main.png) -102px -386px no-repeat;
+   background-size: 442px 428px;
+}
+
+.news__stand ul{
+   display: inline-block;
+   margin: 0;
+   border-top: 1px solid #dae1e6;
+   border-left: 1px solid #dae1e6;
+   padding: 0;
+}
+
+.news__stand li{
+   float: left;
+   border-right: 1px solid #dae1e6;
+   border-bottom: 1px solid #dae1e6;
+   width: 16.66%;
+   height: 65px;
+   text-align: center;
+   padding: 23px 0 22px 0;
+}
+
+.news__stand li img{
+   height: 20px;
+}
+
+.today__read{
+   display: inline-block;
+   border: 1px solid #dae1e6;
+   background-color: #03cf5d;
+   width: 100%;
+   height: 100%;
+}
+
+/* main-right */
+.main__login{
+   display: inline-block;
+   width: 350px;
+   height: 135px;
+   background-color: #888;
+}
+
+.covid{
+   display: inline-block;
+   width: 100%;
+   height: 46px;
+   border: 1px solid #dae1e6;
+
+}
+
+.side__ad{
+   background: url(imgs/side-ad.jpg) no-repeat;
+   background-size: 350px 200px;
+   width: 350px;
+   height: 200px;
+   margin: 12px 0;
+}
+
+.shopping{
+   border: 1px solid #dae1e6;
+   height: 100%;
 }
