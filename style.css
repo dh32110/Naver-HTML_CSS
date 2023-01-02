@@ -1,517 +1,1208 @@
+:root{
+   /* color */
+   --color-black: #000;
+   --color-white: #fff;
+   --color-havy-white: #f7f9fa;
+   --color-green: #03cf5d;
+   --color-brown: #c08d31;
+   --color-heavy-gray: #505050;
+   --color-gray: #888;
+   --color-light-gray: #dae1e6;
+   --color-navy: #3565c9;
+
+   /* font-size */
+   --font-small: 11px;
+   --font-regular: 12px;
+   --font-medium: 13px;
+   --font-large: 14px;
+   --font-big: 15px;
+
+   /* font-weight */
+   --font-weight-regular: 400;
+   --font-weight-bold: 700;
+   /* size */
+
+   /* animation */
+   --animation-duration: 300ms
+}
+
 /* global */
-* {
-   box-sizing: border-box;
+*{
+box-sizing: border-box;
 }
 
-a {
-   text-decoration: none;
-   color: black;
-   background-color: ;
+html,body{
+padding: 0;
+margin: 0;
 }
 
-ul {
-   list-style: none;
+.main__area{
+width: 1190px;
+margin: 0 auto;
+padding: 0 30px;
 }
-
-html,
-body {
-   padding: 0;
-   margin: 0;
-}
-
-.center__align {
-   margin: 0 auto;
-   width: 1190px;
-}
-
 
 .blind {
-   position: absolute;
-   overflow: hidden;
-   clip: rect(0 0 0 0);
-   margin: -1px;
-   width: 1px;
-   height: 1px;
+position: absolute;
+overflow: hidden;
+clip: rect(0 0 0 0);
+margin: -1px;
+width: 1px;
+height: 1px;
 }
 
-.relative {
-   position: relative;
+a{
+text-decoration: none;
+color: var(--color-black);
 }
+
+li{
+list-style: none;
+color: var(--color-black);
+}
+
+h1,h2,h3,h4,h5,h6{margin: 0;}
+
+p{margin: 0;}
 
 /* header */
-header {
-   height: 170px;
+header{
+width: 1130px;
+height: 170px;
+padding-top: 10px;
+margin: 0 auto;
 }
 
-#header__top {
-   float: right;
-   margin-top: 8px;
+/* Logo & Search */
+.header__logo{
+display: inline-block;
+position: relative;
+width: 198px;
+height: 48px;
+background: url(imgs/naver_main.png) 0 -162px no-repeat;
+background-size: 390px 428px;
+vertical-align: middle;
+top: -5px;  
 }
 
-.top__linkset {
-   float: left;
-   color: #888;
-   letter-spacing: -1px;
-   font-size: 11px;
-   line-height: 23px;
+.header__search{
+display: inline-block;
+width: 521px;
+height: 55px;
+margin: 45px 0 0 18px;
 }
 
-.link__icon {
-   display: inline-block;
-   width: 26px;
-   height: 26px;
-   background: url(imgs/naver_main.png)  -382px -213px no-repeat;
-   background-size: 442px 428px;
-   vertical-align: middle;
-   margin: -3px 0 0 3px;
+.header__search fieldset{
+display: inline-block;
+width: 521px;
+height: 49px;
+border: 2px solid var(--color-green);
+padding: 12px 0 12px 10px;
+position: relative;
 }
 
-.top__bar{
-   float: left;
-   width: 1px;
-   height: 10px;
-   margin: 0 7px;
-   color: #888;
-   background-color: #e4e8eb;
+.header__search fieldset input{
+border: none;
+width: 410px;
+height: 23px;
+outline: none;
+vertical-align: top;
+}
+
+.header__search fieldset button{
+width: 49px;
+height: 49px;
+border: none;
+padding: 0;
+background-color: var(--color-green);
+position: absolute;
+top: -2px;
+right: -2px;
+}
+
+.search__button{
+display: inline-block;
+width: 22px;
+height: 22px;
+background: url(imgs/naver_main.png) -420px -24px no-repeat;
+background-size: 442px 428px;
+margin: 14px;
+}
+
+.search__keybord{
+background: url(https://s.pstatic.net/static/www/img/uit/2019/sp_search.svg) -33px -60px no-repeat;
+width: 19px;
+height: 11px;
+display: inline-block;
+}
+
+.search__history{
+background: url(https://s.pstatic.net/static/www/img/uit/2019/sp_search.svg) -87px -60px no-repeat;
+width: 9px;
+height: 4px;
+display: inline-block;
+vertical-align: middle;
+padding: 0 10px;
+margin: 0 2px;
+}
+
+/* Right Link */
+.header__link{
+float: right;
+top: 5px;
+font-size: 11px;
+}
+
+.link__start{
+color: var(--color-black);
+}
+.start__img{
+display: inline-block;
+background: url(imgs/naver_main.png) -382px -213px no-repeat;
+background-size: 442px 428px;
+width: 26px;
+height: 26px;
+vertical-align: middle;
+}
+
+.divider{
+display: inline-block;
+width: 1px;
+height: 10px;
+background-color: var(--color-light-gray);
+margin: 0 6px;
 }
 
 .link__jr{
-   display: inline-block;
-   width: 60px;
-   height: 10px;
-   background: url(imgs/naver_main.png) -264px -296px no-repeat;
-   background-size: 442px 428px;
-   vertical-align: middle;
-   margin: 6px;
+display: inline-block;
+width: 60px;
+height: 10px;
+background: url(imgs/naver_main.png) -264px -296px no-repeat;
+background-size: 442px 428px;
 }
-
 .link__jr:hover{
-   display: inline-block;
-   width: 60px;
-   height: 10px;
-   background: url(imgs/naver_main.png) -326px -296px no-repeat;
-   background-size: 442px 428px;
-   vertical-align: middle;
-   margin: 6px;
+width: 60px;
+height: 10px;
+background: url(imgs/naver_main.png) -326px -296px no-repeat;
+background-size: 442px 428px;
+}  
+
+.link__happybean{
+display: inline-block;
+width: 34px;
+height: 11px;
+background: url(imgs/naver_main.png) -365px -245px no-repeat;
+background-size: 442px 428px;
+margin-left: 8px;
+}
+.link__happybean:hover{
+width: 34px;
+height: 11px;
+background: url(imgs/naver_main.png) -380px -199px no-repeat;
+background-size: 442px 428px;
 }
 
-.link__happy{
-   display: inline-block;
-   width: 34px;
-   height: 11px;
-   background: url(imgs/naver_main.png) -365px -245px no-repeat;
-   background-size: 442px 428px;
-   vertical-align: middle;
-   margin: 6px 3px 2px;
+/* nav */
+nav{
+width: 100%;
+border-top: 1px solid #d1d8e4;
+border-bottom: 1px solid #d1d8e4;
 }
 
-.link__happy:hover{
-   display: inline-block;
-   width: 34px;
-   height: 11px;
-   background: url(imgs/naver_main.png) -380px -199px no-repeat;
-   background-size: 442px 428px;
-   vertical-align: middle;
-   margin: 6px 3px 2px;
+.nav__area{
+display: flex;
+justify-content: space-between;
 }
 
-#header__search {
-   clear: both;
-   padding-top: 12px;
+.nav__img{
+display: inline-block;
+background: url(imgs/naver_main.png) no-repeat;
+background-size: 442px 428px;
+vertical-align: middle;
 }
 
-#header__search h1 {
-   width: 198px;
-   height: 48px;
-   display: inline-block;
-   background: url(imgs/naver_main.png) 0 -162px no-repeat;
-   background-size: 390px 428px;
-   vertical-align: middle;
-   position: relative;
-   top: -5px;
-   left: 1px;
+.nav__content{
+display: flex;
+justify-content: space-between;
+padding-left: 0;
 }
 
-#header__search fieldset {
-   width: 521px;
-   height: 49px;
-   display: inline-block;
-   margin-left: 18px;
-   padding: 12px 0 12px 10px;
-   border: 2px solid #03cf5d;
-   vertical-align: middle;
-   position: relative;
+.nav__content li{
+margin-right: 10px;
+font-size: var(--font-big);
+font-weight: var(--font-weight-bold);
 }
 
-#header__search fieldset input {
-   border: none;
-   padding: 0;
-   outline: none;
-   width: 395px;
-   height: 23px;
-   vertical-align: top;
+.nav__green{
+color: var(--color-green);
 }
 
-#header__search fieldset button {
-   width: 49px;
-   height: 49px;
-   border: none;
-   padding: 0;
-   background: #03cf5d;
-   position: absolute;
-   right: -2px;
-   top: -2px;
-}
-
-#search__keybord {
-   background-image: url(https://s.pstatic.net/static/www/img/uit/2019/sp_search.svg);
-   background-repeat: no-repeat;
-   background-position: -33px -60px;
-   width: 19px;
-   height: 11px;
-   display: inline-block;
-   margin: 0 6px;
-   vertical-align: middle;
-}
-
-#search__history {
-   background-image: url(https://s.pstatic.net/static/www/img/uit/2019/sp_search.svg);
-   background-repeat: no-repeat;
-   background-position: -87px -60px;
-   width: 9px;
-   height: 4px;
-   display: inline-block;
-   margin: 0 6px;
-   vertical-align: middle;
-}
-
-.search__icon {
-   display: inline-block;
-   background-image: url(imgs/naver_main.png);
-   background-position: -420px -24px;
-   background-size: 442px 428px;
-   background-repeat: no-repeat;
-   width: 22px;
-   height: 22px;
-   margin: 14px;
-}
-
-/* navbar global */
-.word__green {
-   color: #03cf5d;
-}
-
-.nav__item {
-   font-size: 15px;
-   line-height: 30px;
-   font-weight: 700;
-   letter-spacing: -.3px;
-   margin-left: 12px;
-}
-
-/* navbar */
-nav {
-   height: 52px;
-   border-top: 1px solid #d1d8e4;
-   border-bottom: 1px solid #d1d8e4;
-   padding: 0 30px;
-}
-
-.nav__menu-black{
-   color: black;
-}
-
-nav ul {
-   display: inline-block;
-   margin: 0;
-   padding: 10px 0 0 4px;
-   list-style: none;
-   font-size: 15px;
-   line-height: 30px;
-   font-weight: 700;
-   letter-spacing: -.3px;
-}
-
-nav li {
-   display: inline-block;
-}
-
-.nav__set {
-   display: inline-block;
-   background-image: url(imgs/naver_main.png);
-   background-repeat: no-repeat;
-   background-size: 442px 428px;
-   vertical-align: middle;
-   margin-left: 2px;
-}
-
-.nav__mail {
-   width: 21px;
-   height: 21px;
-   background-position: -420px -74px;
-}
-
-.nav__shopping {
-   width: 24px;
-   height: 20px;
-   background-position: -76px -388px;
-}
-
-.nav__live {
-   width: 54px;
-   height: 20px;
-   background-position: -209px -269px;
-}
-
-.nav__tv {
-   width: 12px;
-   height: 14px;
-   background-position: -256px -212px;
-}
-
-.nav__divider {
-   display: inline-block;
-   margin: 18px 2px 0;
-   width: 1px;
-   height: 14px;
-   background: #ebeef3;
-}
-
-.more{
-   font-size: 13px;
-   line-height: 30px;
-   font-weight: 400;
+.nav__black{
+color: var(--color-black);
 }
 
 .nav__more{
-   display: inline-block;
-   width: 11px;
-   height: 7px;
-   background: url(imgs/naver_main.png) -402px -296px no-repeat;
-   background-size: 442px 428px;
-   margin-left: 7px;
-   vertical-align: middle;
-   content: '';
+display: flex;
+align-items: center;
+font-size: var(--font-medium);
+margin-left: -60px;
 }
 
-#nav__weather{
-   display: inline-block;
-   width: 270px;
-   height: 18px;
-   padding: 17px 0 17px 0;
-   background-color: #03cf5d;
-   vertical-align: top;
+.more__img{
+width: 11px;
+height: 7px;
+background: url(imgs/naver_main.png) -402px -296px no-repeat;
+background-size: 442px 428px;
+margin-left: 8px;
+}
+
+.nav__weather{
+display: flex;
+align-items: center;
+}
+
+.nav__mail{
+width: 21px;
+height: 21px;
+background-position: -420px -74px;
+}
+
+.nav__shopping{
+width: 24px;
+height: 20px;
+background-position: -76px -388px;
+}
+
+.nav__live{
+width: 54px;
+height: 20px;
+background-position: -209px -269px;
+}
+
+.nav__tv{
+width: 12px;
+height: 14px;
+background-position: -256px -212px;
+margin-right: -5px;
+}
+
+/* weather */
+.nav__weather ul{
+display: flex;
+justify-content: space-between;
+}
+
+.nav__weather li{
+margin-left: 8px;
+}
+
+.weather__dust{
+font-size: var(--font-medium);
+}
+
+.weather__img{
+width: 18px;
+height: 18px;
+background-position: -420px -246px;
+}
+
+.weather__level{
+font-size: var(--font-medium);
+font-weight: var(--font-weight-bold);
+}
+
+.weather__position{
+font-size: var(--font-regular);
+color: var(--color-gray);
+}
+
+.weather__position:hover{
+text-decoration: underline;
+}
+
+.weather__divider{
+display: inline-block;
+width: 1px;
+height: 10px;
+background-color: var(--color-light-gray);
+margin: 4px 0 0 8px;
 }
 
 /* main content */
-/* main-left */
 main{
-   display: inline-block;
-   width: 100%;
-}
-#main__content {
-   padding: 20px 30px;
-   width: 1190px;
-   display: flex;
-   justify-content: space-between;
-}
-#main__left{
-   
+display: flex;
+justify-content: space-between;
+padding: 20px 30px 0 30px;
 }
 
-.main__ad{
-   display: inline-block;
-   width: 750px;
-   height: 135px;
-   background: url(imgs/main-ad.jpg) no-repeat;
-   background-size: 750px 135px;
+#main__left{
+width: 750px;
 }
 
 #main__right{
-   padding: 0 20px;
-   margin: 0;
-}
-.news__area{
-   float: left;
-   width: 750px;
-}
-.news__top{
-   display: inline-block;
-   position: relative;
-   width: 750px;
-   height: 49px;
-   border: 1px solid #dae1e6;
-   padding: 12px 15px 11px 15px;
-   line-height: 24px;
-   background-color: #f7f9fa;
+width: 350px;
 }
 
-.link__news{
-   float: left;
-   padding-right: 12px;
-   margin-left: 7px;
-   font-size: 13px;
-   font-weight: 700;
-   letter-spacing: -.3px;
+#left__ad img{
+height: 135px;
 }
 
-.link__arrow{
-   display: inline-block;
-   background: url(imgs/naver_main.png) -262px -112px no-repeat;
-   background-size: 442px 428px;
-   width: 6px;
-   height: 10px;
+/* news */
+.news__short{
+border: 1px solid var(--color-light-gray);
+height: 49px;
+background-color: var(--color-havy-white);
+display: flex;
+justify-content: space-between;
+font-size: var(--font-medium);
+margin-top: 8px;
 }
 
-.news__content{
-   display: inline-block;
-   font-size: 13px;
+.news__short span{
+padding: 3px 0;
 }
 
-.news__link{
-   float: right;
+.short__title{
+padding: 13px 15px 11px;
+line-height: 23px;
 }
 
-.news__qatar{
-   display: inline-block;
-   width: 93px;
-   height: 16px;
-   background: url(imgs/naver_main.png) -270px -245px no-repeat;
-   background-size: 442px 428px;
-   vertical-align: middle;
+.short__name{
+font-weight: var(--font-weight-bold);
 }
 
-.news__categories{
-   display: inline-block;
-   color: #3565c9;
-   font-size: 13px;
-   font-weight: 700;
-   margin-left: 8px;
-   line-height: 24px;
+.title__arrow{
+display: inline-block;
+background: url(imgs/naver_main.png) -262px -112px no-repeat;
+background-size: 442px 428px;
+width: 6px;
+height: 10px;
 }
 
-.stand__top{
-   padding: 22px 0 16px;
-   font-size: 14px;
-   line-height: 18px;
-   width: 750px;
-   height: 56px;
-   display: flex;
-   justify-content: space-between;
+.short__categories{
+display: flex;
+justify-content: space-between;
+padding: 13px 15px 11px;
+margin: 0;
 }
 
-.stand__top a{
-   font-weight: 700;
+.short__categories li{
+margin: 0 0 0 15px;
+text-align: center;
+padding: 3px 0;
+font-weight: var(--font-weight-bold);
 }
 
-.stand__img{
-   display: inline-block;
-   width: 27px;
-   height: 24px;
-   background: url(imgs/naver_main.png) -272px -342px no-repeat;
-   background-size: 442px 428px;
-   vertical-align: middle;
-   margin: -6px 0 0 0;
+.categories__newshome{
+color: var(--color-navy);
 }
 
-.stand__link{
-   display: inline-block;
-   width: 7px;
-   height: 11px;
-   background: url(imgs/naver_main.png) -410px -213px no-repeat;
-   background-size: 442px 428px;
-   margin-left: 6px;
+.worldcup__logo{
+display: inline-block;
+width: 93px;
+height: 16px;
+background: url(imgs/naver_main.png) -270px -245px no-repeat;
+background-size: 442px 428px;
+vertical-align: middle;
 }
 
-.sub__news{
-   margin-right: 15px;
+.news__title{
+display: flex;
+justify-content: space-between;
+padding: 22px 0 16px 0;
 }
 
-.all__news{
-   font-weight: 700;
-}
-
-.menu__list{
-   display: inline-block;
-   width: 14px;
-   height: 13px;
-   background: url(imgs/naver_main.png) -244px -310px no-repeat;
-   background-size: 446px 428px;
-   margin: 0 9px;
-}
-
-.menu__table{
-   display: inline-block;
-   width: 13px;
-   height: 13px;
-   background: url(imgs/naver_main.png) -276px -310px no-repeat;
-   background-size: 442px 428px;
-   margin: 0 9px 0 0;
-}
-
-.menu__set{
-   display: inline-block;
-   width: 15px;
-   height: 15px;
-   background: url(imgs/naver_main.png) -102px -386px no-repeat;
-   background-size: 442px 428px;
-}
-
-.news__stand ul{
-   display: inline-block;
-   margin: 0;
-   border-top: 1px solid #dae1e6;
-   border-left: 1px solid #dae1e6;
-   padding: 0;
+.news__stand{
+display: flex;
+font-size: var(--font-big);
+padding-left: 0;
+margin: 0;
 }
 
 .news__stand li{
-   float: left;
-   border-right: 1px solid #dae1e6;
-   border-bottom: 1px solid #dae1e6;
-   width: 16.66%;
-   height: 65px;
-   text-align: center;
-   padding: 23px 0 22px 0;
+margin-left: 10px;
 }
 
-.news__stand li img{
-   height: 20px;
+.stand__title{
+display: flex;
+font-weight: var(--font-weight-bold);
+margin-left: 0;
 }
 
+.stand__img{
+display: inline-block;
+width: 27px;
+height: 24px;
+background: url(imgs/naver_main.png) -272px -342px no-repeat;
+background-size: 442px 428px;
+position: relative;
+top: -5px;
+}
+
+.stand__arrow{
+display: inline-block;
+width: 7px;
+height: 11px;
+background: url(imgs/naver_main.png) -410px -213px no-repeat;
+background-size: 442px 428px;
+margin: 4px 0 4px 8px;
+}
+
+.stand__subscribe{
+margin-left: 0;
+}
+
+.center__dot{
+display: inline-block;
+width: 4px;
+height: 4px;
+border-radius: 50%;
+background-color: var(--color-light-gray);
+margin: 4px 3px 4px 8px;
+}
+
+.stand__all{
+font-weight: var(--font-weight-bold);
+}
+
+.set__list{
+display: inline-block;
+width: 14px;
+height: 13px;
+background: url(imgs/naver_main.png) -244px -310px no-repeat;
+background-size: 446px 428px;
+}
+
+.set__album{
+display: inline-block;
+width: 13px;
+height: 13px;
+background: url(imgs/naver_main.png) -276px -310px no-repeat;
+background-size: 442px 428px;
+margin-left: 15px;
+}
+
+.set__menu{
+display: inline-block;
+width: 15px;
+height: 15px;
+background: url(imgs/naver_main.png) -102px -386px no-repeat;
+background-size: 442px 428px;
+margin: 1px 0 0 15px;
+}
+
+.news__list{
+display: inline-block;
+border-top: 1px solid var(--color-light-gray);
+border-left: 1px solid var(--color-light-gray);
+padding: 0;
+margin: 0;
+z-index: 1;
+}
+
+.news__list li{
+float: left;
+width: 16.66%;
+height: 65px;
+border-right: 1px solid var(--color-light-gray);
+border-bottom: 1px solid var(--color-light-gray);
+text-align: center;
+padding: 23px 0 22px 0;
+}
+
+.news__list li img{
+display: inline-block;
+height: 20px;
+}
+
+.news__next{
+float: right;
+position: relative;
+width: 44px;
+height: 44px;
+background: url(imgs/naver_main.png) -92px -296px no-repeat;
+background-size: 442px 428px;
+z-index: 2;
+right: -20px;
+top: -157px;
+}
+
+
+
+/* Today read */
 .today__read{
-   display: inline-block;
-   border: 1px solid #dae1e6;
-   background-color: #03cf5d;
-   width: 100%;
-   height: 100%;
+margin-top: 25px;
+display: inline-block;
+position: relative;
+top: -50px;
 }
 
-/* main-right */
-.main__login{
-   display: inline-block;
-   width: 350px;
-   height: 135px;
-   background-color: #888;
+.read__top{
+display: flex;
+justify-content: space-between;
+width: 100%;
 }
 
-.covid{
-   display: inline-block;
-   width: 100%;
-   height: 46px;
-   border: 1px solid #dae1e6;
+.top__title{
+display: inline-block;
+font-size: var(--font-large);
+font-weight: var(--font-weight-bold);
+}
+
+.top__subtitle{
+font-size: var(--font-regular);
+color: var(--color-gray);
+margin-left: 4px;
+}
+
+.top__count{
+font-size: var(--font-regular);
+font-weight: var(--font-weight-bold);
+}
+
+.top__write{
+font-size: var(--font-regular);
+color: var(--color-gray);
+margin-right: 15px;
+}
+
+.top__img{
+display: inline-block;
+background: url(imgs/naver_main.png) -358px -310px no-repeat;
+background-size: 442px 428px;
+width: 11px;
+height: 11px;
+}
+
+.top__set{
+font-size: var(--font-regular);
+color: var(--color-heavy-gray);
+}
+
+/* read nav */
+.read__dot{
+display: inline-block;
+width: 4px;
+height: 4px;
+border-radius: 50%;
+background-color: var(--color-light-gray);
+margin: 4px 8px 4px 8px;
+}
+
+.read__nav ul{
+display: flex;
+justify-content: space-between;
+border-top: 1px solid var(--color-light-gray);
+border-left: 1px solid var(--color-light-gray);
+border-bottom: 1px solid var(--color-light-gray);
+height: 49px;
+padding: 0;
+margin-bottom: 0;
+}
+
+.read__nav ul li{
+display: inline-block;
+border-right: 1px solid var(--color-light-gray);
+text-align: center;
+width: 94px;
+font-weight: var(--font-weight-bold);
+font-size: var(--font-medium);
+line-height: 49px;
+margin: 0 -1px;
+}
+
+.read__before{
+background: url(imgs/naver_main.png) -128px -342px no-repeat;
+background-size: 442px 428px;
+width: 40px;
+height: 40px;
+position: relative;
+float: left;
+top: -45px;
+left: -20px;
+}
+
+.read__next{
+background: url(imgs/naver_main.png) -44px -342px no-repeat;
+background-size: 442px 428px;
+width: 40px;
+height: 40px;
+position: relative;
+float: right;
+right: -20px;
+top: -45px;
+}
+
+/* read content */
+.active{
+background-color: var(--color-brown);
+color: var(--color-white);
+}
+
+.living__list-one{
+display: inline-block;
+padding: 0;
+margin: 0;
+width: 100%;
+position: relative;
+border-bottom: 1px solid var(--color-light-gray);
+padding-bottom: 4px;
+top: -20px;
+}
+
+.living__list-two{
+display: inline-block;
+width: 100%;
+position: relative;
+border-bottom: 1px solid var(--color-light-gray);
+padding: 0 0 4px 0;
+top: -16px;
+}
+
+.living__item{
+display: flex;
+justify-content: space-between;
+height: 114px;
+width: 100%;
+margin-bottom: 18px;
+}
+
+.living__imgbox{
+display: inline-block;
+width: 170px;
+height: 114px;
+overflow: hidden;
+}
+
+.living__img{
+width: 170px;
+height: 114px;
+display: block;
+transition: all var(--animation-duration) ease-in-out;
+}
+
+.living__img:hover{
+transform: scale(1.1);
+}
+
+.living__description{
+display: inline-block;
+margin-left: 20px;
+padding: 4px 47px 0 0;
+}
+
+.living h3{
+
+font-size: var(--font-medium);
+font-weight: var(--font-weight-bold);
+line-height: 20px;
+}
+
+.living h4{
+font-size: var(--font-regular);
+font-weight: var(--font-weight-bold);
+color: var(--color-brown);
+line-height: 16px;
+}
+
+.living p{
+line-height: 20px;
+font-size: var(--font-medium);
+color: var(--color-heavy-gray);
+line-height: 20px;
+width: 512px;
+display: -webkit-box;
+-webkit-line-clamp: 2;
+-webkit-box-orient: vertical;
+overflow: hidden;
+}
+
+.source__box{
+line-height: 20px;
+color: var(--color-heavy-gray);
+font-size: var(--font-regular);
+margin-top: 2px;
+}
+
+.source__dot{
+display: inline-block;
+background-color: var(--color-gray);
+width: 2px;
+height: 2px;
+border-radius: 50%;
+margin: 0 2px;
+vertical-align: middle;
+}
+
+.source__date{
+color: var(--color-gray);
+}
+
+.read__hot{
+display: inline-block;
+padding-bottom: 25px;
+width: 100%;
+height: 240px;
+}
+
+.read__hot h5{
+display: inline-block;
+font-size: var(--font-large);
+font-weight: var(--font-weight-bold);
+margin: 0;
+}
+
+.hot__arrow{
+display: inline-block;
+width: 7px;
+height: 11px;
+background: url(imgs/naver_main.png) -408px -146px no-repeat;
+background-size: 442px 428px;
+margin-left: 6px;
+}
+
+.read__hot ul{
+padding: 0;
+display: flex;
+justify-content: space-between
+}
+
+.read__hot ul li{
+display: inline-block;
+width: 232px;
+margin: 0;
+}
+
+.hot__img{
+display: inline-block;
+position: relative;
+width: 232px;
+height: 130px;
+overflow: hidden;
+}
+
+.hot__img img{
+width: 232px;
+height: 130px;
+transition: all var(--animation-duration) ease-in-out;
+}
+
+.read__hot li:hover img{
+transform: scale(1.1);
+}
+
+.read__hot li:hover p{
+text-decoration: underline;
+}
+
+.hot__badge{
+background-color: #c08d31;
+color: var(--color-white);
+font-size: var(--font-regular);
+font-weight: var(--font-weight-bold);
+position: absolute;
+top: 0;
+left: 0;
+line-height: 30px;
+padding: 0 10px;
+}
+
+.hot__next{
+background: url(imgs/naver_main.png) -44px -342px no-repeat;
+background-size: 442px 428px;
+width: 40px;
+height: 40px;
+position: relative;
+float: right;
+right: -20px;
+top: -175px;
+}
+
+.hot__title{
+font-size: var(--font-medium);
+line-height: 20px;
+margin-top: 8px;
+font-weight: var(--font-weight-bold);
+transition: all var(--animation-duration) ease-in-out;
+}
+
+.hot__subtitle{
+font-size: var(--font-regular);
+line-height: 20px;
+color: var(--color-heavy-gray);
+}
+
+.hot__percent{
+color: #c08d31;
+font-size: var(--font-regular);
+line-height: 20px;
+}
+
+.hot__goal{
+font-size: var(--font-regular);
+line-height: 20px;
+color: var(--color-heavy-gray);
+}
+
+.hot__more{
+border-bottom: 1px solid var(--color-light-gray);
+width: 100%;
+height: 20px;
+}
+
+.more__btn{
+width: 42px;
+height: 42px;
+background: url(imgs/naver_main.png) 0 -342px no-repeat;
+background-size: 442px 428px;
+display: flex;
+position: relative;
+margin: 0 auto;
+}
+
+.text__more{
+display: inline-block;
+font-size: var(--font-regular);
+position: relative;
+margin-left: 308px;
+}
+
+/* right item */
+#right__login{
+width: 350px;
+height: 135px;
+background-color: #f7f9fa;
+border: 1px solid var(--color-light-gray);
+padding: 16px 16px 12px 17px;
+}
+
+#right__login h6{
+color: #808080;
+font-size: var(--font-regular);
+line-height: 16px;
+font-weight: var(--font-weight-regular);
+margin: 0;
+}
+
+.login__btn{
+width: 315px;
+height: 48px;
+background-color: var(--color-green);
+border: 1px solid #15c654;
+border-radius: 2px;
+text-align: center;
+line-height: 16px;
+margin-top: 11px;
+padding: 15px 0;
+}
+
+.login__logo{
+background: url(imgs/naver_main.png) -202px -296px no-repeat;
+background-size: 442px 428px;
+width: 60px;
+height: 12px;
+display: inline-block;
+margin: 2px 0 0 0;
+}
+
+.login__text{
+font-size: var(--font-medium);
+font-weight: var(--font-weight-bold);
+color: var(--color-white);
+}
+
+.login__bottom{
+font-size: var(--font-regular);
+color: #404040;
+display: flex;
+justify-content: space-between;
+margin: 14px 8px 0 4px;
+}
+
+.login__img{
+background: url(imgs/naver_main.png) -408px -55px no-repeat;
+background-size: 442px 428px;
+width: 10px;
+height: 14px;
+display: inline-block;
+}
+
+.login__dot{
+width: 3px;
+height: 3px;
+border-radius: 50%;
+background-color: #d7dce0;
+display: inline-block;
+vertical-align: middle;
+}
+
+.login__human{
+background: url(imgs/naver_main.png) -401px -245px no-repeat;
+background-size: 442px 428px;
+width: 11px;
+height: 11px;
+display: inline-block;
+}
+
+#right__issue{
+border: 1px solid var(--color-light-gray);
+width: 350px;
+height: 49px;
+margin-top: 12px;
+display: flex;
+justify-content: space-between;
+padding: 13px 0 14px 16px;
+vertical-align: top;
+}
+
+.issue{
+font-size: var(--font-small);
+border: 1px solid #202020;
+border-radius: 10px;
+padding: 0 7px;
+height: 18px;
+font-weight: var(--font-weight-bold);
+}
+
+.issue__covid{
+font-size: var(--font-medium);
+}
+
+.issue__btn{
+width: 44px;
+display: flex;
+margin-right: 10px;
+}
+
+.before__btn{
+display: inline-block;
+width: 22px;
+height: 22px;
+border: 1px solid #e4e8eb;
+}
+
+.issue__before{
+background: url(imgs/naver_main.png) -162px -327px no-repeat;
+background-size: 442px 428px;
+width: 6px;
+height: 9px;
+display: inline-block;
+margin: 6px 8px 7px 7px;
+}
+
+.issue__before:hover{
+background: url(imgs/naver_main.png) -154px -327px no-repeat;
+background-size: 442px 428px;
+width: 6px;
+height: 9px;
+display: inline-block;
+}
+
+.next__btn{
+display: inline-block;
+width: 22px;
+height: 22px;
+border: 1px solid #e4e8eb;
+margin-left: -1px;
+}
+
+.issue__next{
+background: url(imgs/naver_main.png) -146px -327px no-repeat;
+background-size: 442px 428px;
+width: 6px;
+height: 9px;
+display: inline-block;
+margin: 6px 7px 7px 8px;
+}
+
+.issue__next:hover{
+background: url(imgs/naver_main.png) -138px -327px no-repeat;
+background-size: 442px 428px;
+width: 6px;
+height: 9px;
+display: inline-block;
+}
+
+#right__ad{
+margin-top: 10px;
+}
+
+#right__ad img{
+width: 350px;
+height: 200px;
+}
+
+#right__shopping{
+margin-top: 10px;
 
 }
 
-.side__ad{
-   background: url(imgs/side-ad.jpg) no-repeat;
-   background-size: 350px 200px;
-   width: 350px;
-   height: 200px;
-   margin: 12px 0;
+#right__shopping iframe{
+width: 350px;
+height: 1809px;
+outline: none;
+border: none;
 }
 
-.shopping{
-   border: 1px solid #dae1e6;
-   height: 100%;
+/* footer */
+footer{
+background-color: #fafbfc;
+border-top: 1px solid#e4e8eb;
+padding-bottom: 92px;
+vertical-align: top;
+}
+
+/* footer ad */
+#footer__ad{
+padding: 24px 0;
+display: flex;
+justify-content: space-between;
+border-bottom: 1px solid #e4e8eb;
+}
+
+.ad__item{
+display: flex;
+position: relative;
+}
+
+/* footer notice area */
+#footer__notice{
+display: flex;
+justify-content: space-between;
+padding: 16px 0 15px 0;
+border-bottom: 1px solid #e4e8eb;
+}
+
+.notice__title{
+font-size: var(--font-medium);
+font-weight: var(--font-weight-bold);
+}
+
+.notice__title:hover{
+text-decoration: underline;
+}
+
+.notice__content{
+font-size: var(--font-regular);
+line-height: 16px;
+color: var(--color-gray);
+margin-left: 5px;
+}
+
+.service__more{
+font-size: var(--font-regular);
+font-weight: var(--font-weight-bold);
+line-height: 16px;
+}
+
+.service__arrow{
+background: url(imgs/naver_main.png) -408px -110px no-repeat;
+background-size: 442px 428px;
+width: 8px;
+height: 12px;
+display: inline-block;
+}
+
+/* partner */
+#footer__company{
+display: flex;
+justify-content: space-between;
+border-bottom: 1px solid #e4e8eb;
+
+
+}
+
+.partner__menu{
+padding: 20px 0;
+}
+
+.company__partner{
+display: flex;
+padding-bottom: 10px;
+}
+
+.partner__title{
+font-size: var(--font-regular);
+width: 87px;
+}
+
+.partner__item{
+font-size: var(--font-regular);
+color: var(--color-gray);
+}
+
+/* service */
+.service__box{
+display: flex;
+justify-content: space-between;
+padding: 28px 0;
+}
+
+.service__item{
+display: flex;
+margin-left: 50px;
+}
+
+.service__item img{
+width: 48px;
+height: 48px;
+}
+
+.service__info{
+font-size: var(--font-regular);
+padding-top: 2px;
+display: flex;
+flex-direction: column;
+margin-right: 12px;
+}
+
+/* footer menu */
+#footer__menu{
+padding-top: 25px;
+display: flex;
+}
+
+#footer__menu ul{
+display: flex;
+padding: 0;
+font-size: var(--font-regular);
+position: relative;
+margin: 0;
+}
+
+#footer__menu ul li{
+text-align: center;
+}
+
+#footer__menu li::after{
+content: "";
+ display: inline-block;
+ width: 1px;
+ height: 11px;
+ margin: 0 8px;
+ background-color: #e4e8eb;
+ vertical-align: -1px;
+}
+
+#footer__menu ul li:last-child::after{
+content: none;
+}
+
+#footer__menu li:hover{
+text-decoration: underline;
+}
+
+#footer__menu li a{
+color: var(--color-gray);
+}
+
+.naver-company{
+font-size: var(--font-regular);
+font-weight: var(--font-weight-bold);
+display: flex;
+margin-left: 10px;
+}
+
+.naver-company:hover{
+text-decoration: underline;
 }

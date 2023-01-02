@@ -6,270 +6,665 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="shortcut icon" type="image/x-icon" href="imgs/favicon.ico" />
-   <link rel="stylesheet" href="./style.css" />
+   <link rel="stylesheet" href="./style.css">
    <title>NAVER</title>
 </head>
 
 <body>
    <header>
-      <div class="center__align">
-         <!-- 상단 메인 -->
-         <div id="header__top">
-            <a href="https://help.naver.com/support/welcomePage/guide.help">
-               <span class="top__linkset">네이버를시작페이지로
-                  <span class="link__icon"></span>
-               </span>
-            </a>
-            <span class="top__bar">|</span>
-            <a href="https://jr.naver.com">
-               <span class="top__linkset link__jr"></span>
-               <span class="blind">쥬니어 네이버</span>
-            </a>
-            <a href="https://happybean.naver.com">
-               <span class="top__linkset link__happy"></span>
-               <span class="blind">해피빈</span>
-            </a>
-         </div>
-         <div id="header__search">
-            <a href="http://www.naver.com">
-               <h1>
-                  <span class="blind">네이버</span>
-               </h1>
-            </a>
-            <h2 class="blind">검색창</h2>
-            <fieldset>
-               <legend class="blind">검색</legend>
-               <input type="text" />
-               <span id="search__keybord"></span>
-               <span id="search__history"></span>
-               <button>
-                  <span class="blind">검색</span>
-                  <span class="search__icon"></span>
-               </button>
-            </fieldset>
-         </div>
+      <div class="header__link">
+         <a href="https://help.naver.com/support/welcomePage/guide.help" class="link__start">
+            <span>네이버를 시작페이지로
+               <span class="start__img"></span>
+            </span>
+         </a>
+         <span class="divider"></span>
+         <a href="https://jr.naver.com" class="link__jr">
+            <span class="blind">쥬니어네이버</span>
+         </a>
+         <a href="https://happybean.naver.com" class="link__happybean">
+            <span></span>
+            <span class="blind">해피빈</span>
+         </a>
+      </div>
+      <div class="header__logo">
+         <a href="http://www.naver.com">
+            <h1 class="blind">네이버</h1>
+         </a>
+      </div>
+      <div class="header__search">
+         <fieldset>
+            <legend class="blind">검색</legend>
+            <input type="text" />
+            <span class="search__keybord"></span>
+            <span class="search__history"></span>
+            <button>
+               <span class="blind">검색</span>
+               <span class="search__button"></span>
+            </button>
+         </fieldset>
       </div>
    </header>
 
-   <!-- navbar -->
    <nav>
-      <div class="center__align relative">
-         <ul class="nav__menu">
+      <div class="nav__area main__area">
+         <ul class="nav__content">
             <li>
-               <a href="https://mail.naver.com" class="nav__item">
-                  <span class="nav__mail nav__set"></span>
-                  <span class="word__green">메일</span>
+               <a href="https://mail.naver.com">
+                  <span class="nav__img nav__mail"></span>
+                  <span class="nav__green">메일</span>
                </a>
             </li>
             <li>
                <a href="https://section.cafe.naver.com">
-                  <span class="nav__cafe nav__set nav__item"></span>
-                  <span class="word__green">카페</span>
+                  <span></span>
+                  <span class="nav__green">카페</span>
                </a>
             </li>
             <li>
                <a href="https://section.blog.naver.com">
-                  <span class="nav__blog nav__set nav__item"></span>
-                  <span class="word__green">블로그</span>
+                  <span></span>
+                  <span class="nav__green">블로그</span>
                </a>
             </li>
             <li>
                <a href="https://kin.naver.com">
-                  <span class="nav__in nav__set nav__item"></span>
-                  <span class="word__green">지식iN</span>
+                  <span></span>
+                  <span class="nav__green">지식IN</span>
                </a>
             </li>
             <li>
                <a href="https://shopping.naver.com">
-                  <span class="nav__shopping nav__set nav__item"></span>
+                  <span class="nav__img nav__shopping"></span>
                   <span class="blind">쇼핑</span>
                </a>
             </li>
             <li>
                <a href="https://shoppinglive.naver.com/home">
-                  <span class="nav__live nav__set"></span>
+                  <span class="nav__img nav__live"></span>
                   <span class="blind">쇼핑live</span>
                </a>
             </li>
             <li>
                <a href="https://order.pay.naver.com/home">
-                  <span class="nav__pay nav__set nav__item"></span>
-                  <span class="word__green">Pay</span>
+                  <span></span>
+                  <span class="nav__green">Pay</span>
                </a>
             </li>
             <li>
                <a href="https://tv.naver.com/">
-                  <span class="nav__tv nav__set nav__item"></span>
-                  <span class="word__green">TV</span>
+                  <span class="nav__img nav__tv"></span>
+                  <span class="nav__green">TV</span>
                </a>
             </li>
-         </ul>
-         <ul class="nav__menu-black">
             <li>
                <a href="https://dict.naver.com/">
-                  <span class="nav__dict nav__set nav__item">사전</span>
+                  <span></span>
+                  <span class="nav__black">사전</span>
                </a>
             </li>
             <li>
                <a href="https://news.naver.com/">
-                  <span class="nav__news nav__set nav__item">뉴스</span>
+                  <span></span>
+                  <span class="nav__black">뉴스</span>
                </a>
             </li>
             <li>
                <a href="https://finance.naver.com/">
-                  <span class="nav__finance nav__set nav__item">증권</span>
+                  <span></span>
+                  <span class="nav__black">증권</span>
                </a>
             </li>
             <li>
                <a href="https://land.naver.com/">
-                  <span class="nav__home nav__set nav__item">부동산</span>
+                  <span></span>
+                  <span class="nav__black">부동산</span>
                </a>
             </li>
             <li>
                <a href="https://map.naver.com/">
-                  <span class="nav__map nav__set nav__item">지도</span>
+                  <span></span>
+                  <span class="nav__black">지도</span>
                </a>
             </li>
             <li>
                <a href="https://vibe.naver.com/about/">
-                  <span class="nav__vibe nav__set nav__item">VIBE</span>
+                  <span></span>
+                  <span class="nav__black">VIBE</span>
                </a>
             </li>
             <li>
                <a href="https://search.shoppimg.naver.com/book/home">
-                  <span class="nav__book nav__set nav__item">도서</span>
+                  <span></span>
+                  <span class="nav__black">도서</span>
                </a>
             </li>
             <li>
                <a href="https://comic.naver.com/">
-                  <span class="nav__webtoon nav__set nav__item">웹툰</span>
+                  <span></span>
+                  <span class="nav__black">웹툰</span>
                </a>
             </li>
          </ul>
-
-         <div class="nav__divider"></div>
-         <ul>
-            <li>
-               <a href="#">
-                  <span class="more">더보기</span>
-                  <span class="nav__more"></span>
-               </a>
-            </li>
-            <div id="nav__weather">
-               <h2 class="blind">날씨</h2>
-            </div>
-         </ul>
+         <div class="nav__more">
+            <span>더보기</span>
+            <span class="more__img"></span>
+         </div>
+         <div class="nav__weather">
+            <ul>
+               <li class="weather__dust">미세</li>
+               <li class="nav__img weather__img"></li>
+               <li class="weather__level">보통</li>
+               <li class="weather__divider"></li>
+               <li class="weather__dust">초미세</li>
+               <li class="nav__img weather__img"></li>
+               <li class="weather__level">보통</li>
+               <li class="weather__position">○○시</li>
+            </ul>
+         </div>
       </div>
    </nav>
-   <!-- main content -->
-   <main>
-      <div id="main__content" class="center__align">
-         <div id="main__left">
-            <!-- 광고 -->
-            <div class="main__ad"></div>
-            <!-- news -->
-            <div class="news__area">
-               <div class="news__top">
-                  <a href="" class="link__news">
-                     <span>연합뉴스</span>
-                     <span class="link__arrow"></span>
-                  </a>
-                  <a href="">
-                     <span class="news__content">
-                        속보) 프론트 엔드 개발자를 꿈꾸다
-                     </span>
-                  </a>
-                  <div class="news__link">
-                     <a href="" class="link__qatar">
-                        <span class="news__qatar"></span><span class="blind">Qatar</span>
-                     </a>
-                     <a href="" class="news__categories"><span>뉴스홈</span></a>
-                     <a href="" class="news__categories"><span>연예</span></a>
-                     <a href="" class="news__categories"><span>스포츠</span></a>
-                     <a href="" class="news__categories"><span>경제</span></a>
-                  </div>
-               </div>
-               <div class="news__stand">
-                  <div class="stand__top">
-                     <div class="stand__top-left">
-                        <span class="stand__img"></span>
-                        <a href="#">뉴스 스탠드</a>
-                        <span class="stand__link"></span>
-                        <span class="sub__news">구독한 언론사</span>
-                        <span class="all__news">전체언론사</span>
-                     </div>
-                     <div class="stand__top-right">
-                        <span class="menu__list"></span>
-                        <span class="menu__table"></span>
-                        <span class="menu__set"></span>
-                     </div>
-                  </div>
-                  <ul>
-                     <li><img src="imgs/han.png" alt="한겨례"><span class="blind">한겨례</span></li>
-                     <li><img src="imgs/inews.png" alt="아이뉴스"><span class="blind">아이뉴스</span></li>
-                     <li><img src="imgs/joongang.png" alt="중앙일보"><span class="blind">중앙일보</span></li>
-                     <li><img src="imgs/han.png" alt="한겨례"><span class="blind">한겨례</span></li>
-                     <li><img src="imgs/inews.png" alt="아이뉴스"><span class="blind">아이뉴스</span></li>
-                     <li><img src="imgs/joongang.png" alt="중앙일보"><span class="blind">중앙일보</span></li>
-                     <li><img src="imgs/han.png" alt="한겨례"><span class="blind">한겨례</span></li>
-                     <li><img src="imgs/inews.png" alt="아이뉴스"><span class="blind">아이뉴스</span></li>
-                     <li><img src="imgs/joongang.png" alt="중앙일보"><span class="blind">중앙일보</span></li>
-                     <li><img src="imgs/han.png" alt="한겨례"><span class="blind">한겨례</span></li>
-                     <li><img src="imgs/inews.png" alt="아이뉴스"><span class="blind">아이뉴스</span></li>
-                     <li><img src="imgs/joongang.png" alt="중앙일보"><span class="blind">중앙일보</span></li>
-                     <li><img src="imgs/han.png" alt="한겨례"><span class="blind">한겨례</span></li>
-                     <li><img src="imgs/inews.png" alt="아이뉴스"><span class="blind">아이뉴스</span></li>
-                     <li><img src="imgs/joongang.png" alt="중앙일보"><span class="blind">중앙일보</span></li>
-                     <li><img src="imgs/han.png" alt="한겨례"><span class="blind">한겨례</span></li>
-                     <li><img src="imgs/inews.png" alt="아이뉴스"><span class="blind">아이뉴스</span></li>
-                     <li><img src="imgs/joongang.png" alt="중앙일보"><span class="blind">중앙일보</span></li>
-                     <li><img src="imgs/han.png" alt="한겨례"><span class="blind">한겨례</span></li>
-                     <li><img src="imgs/inews.png" alt="아이뉴스"><span class="blind">아이뉴스</span></li>
-                     <li><img src="imgs/joongang.png" alt="중앙일보"><span class="blind">중앙일보</span></li>
-                     <li><img src="imgs/han.png" alt="한겨례"><span class="blind">한겨례</span></li>
-                     <li><img src="imgs/inews.png" alt="아이뉴스"><span class="blind">아이뉴스</span></li>
-                     <li><img src="imgs/joongang.png" alt="중앙일보"><span class="blind">중앙일보</span></li>
-                  </ul>
-               </div>
-            </div>
-            <!-- Today read -->
-            <div class="today__read">
-               today__read
-            </div>
-         </div>
 
-         <div id="main__right">
-            <div class="side__newsad">
-               <div class="main__login">로그인</div>
-               <div class="covid">코로나바이러스감염증-19 현황</div>
-               <div class="side__ad"></div>
+   <main class="main__area">
+      <section id="main__left">
+         <div id="left__ad">
+            <img src="imgs/main-ad.jpg" alt="엘소드 메인 광고">
+         </div>
+         <div id="left__news">
+            <div class="news__short">
+               <div class="short__title">
+                  <span class="short__name">연합뉴스</span>
+                  <span class="title__arrow"></span>
+                  <span>속보) 김동한 프론트엔드 개발자를 꿈꾸다.</span>
+               </div>
+               <ul class="short__categories">
+                  <li class="categories__worldcup">
+                     <span class="worldcup__logo"></span>
+                     <span class="blind">Qatar</span>
+                  </li>
+                  <li class="categories__newshome">뉴스홈</li>
+                  <li>연예</li>
+                  <li>스포츠</li>
+                  <li>경제</li>
+               </ul>
             </div>
-            <div class="shopping">
-               <h6>트렌드 쇼핑</h6>
-               <div class="shopping nav">
-                  <ul>
-                     <li>쿠팡</li>
-                     <li>G마켓</li>
-                     <li>옥션</li>
-                     <li>11번가</li>
-                     <li>SSG닷컴</li>
-                     <li>티몬</li>
-                     <li>올리브영</li>
-                     <li>위메프</li>
-                     <li>GS샵</li>
-                     <li>CJ온스타일</li>
-                     <li>패션플러스</li>
-                  </ul>
+            <div class="news__title">
+               <ul class="news__stand">
+                  <li class="stand__title">
+                     <span class="stand__img"></span>
+                     <span>뉴스 스탠드</span>
+                     <span class="stand__arrow"></span>
+                  </li>
+                  <li class="stand__subscribe">
+                     구독한 언론사
+                     <span class="center__dot"></span>
+                  </li>
+                  <li class="stand__all">전체 언론사</li>
+               </ul>
+               <div class="news__set">
+                  <span class="set__list"></span>
+                  <span class="set__album"></span>
+                  <span class="set__menu"></span>
+               </div>
+            </div>
+            <ul class="news__list">
+               <li><img src="imgs/han.png" alt="한겨례"><span class="blind">한겨례</span></li>
+               <li><img src="imgs/inews.png" alt="아이뉴스"><span class="blind">아이뉴스</span></li>
+               <li><img src="imgs/joongang.png" alt="중앙일보"><span class="blind">중앙일보</span></li>
+               <li><img src="imgs/han.png" alt="한겨례"><span class="blind">한겨례</span></li>
+               <li><img src="imgs/inews.png" alt="아이뉴스"><span class="blind">아이뉴스</span></li>
+               <li><img src="imgs/joongang.png" alt="중앙일보"><span class="blind">중앙일보</span></li>
+               <li><img src="imgs/han.png" alt="한겨례"><span class="blind">한겨례</span></li>
+               <li><img src="imgs/inews.png" alt="아이뉴스"><span class="blind">아이뉴스</span></li>
+               <li><img src="imgs/joongang.png" alt="중앙일보"><span class="blind">중앙일보</span></li>
+               <li><img src="imgs/han.png" alt="한겨례"><span class="blind">한겨례</span></li>
+               <li><img src="imgs/inews.png" alt="아이뉴스"><span class="blind">아이뉴스</span></li>
+               <li><img src="imgs/joongang.png" alt="중앙일보"><span class="blind">중앙일보</span></li>
+               <li><img src="imgs/han.png" alt="한겨례"><span class="blind">한겨례</span></li>
+               <li><img src="imgs/inews.png" alt="아이뉴스"><span class="blind">아이뉴스</span></li>
+               <li><img src="imgs/joongang.png" alt="중앙일보"><span class="blind">중앙일보</span></li>
+               <li><img src="imgs/han.png" alt="한겨례"><span class="blind">한겨례</span></li>
+               <li><img src="imgs/inews.png" alt="아이뉴스"><span class="blind">아이뉴스</span></li>
+               <li><img src="imgs/joongang.png" alt="중앙일보"><span class="blind">중앙일보</span></li>
+               <li><img src="imgs/han.png" alt="한겨례"><span class="blind">한겨례</span></li>
+               <li><img src="imgs/inews.png" alt="아이뉴스"><span class="blind">아이뉴스</span></li>
+               <li><img src="imgs/joongang.png" alt="중앙일보"><span class="blind">중앙일보</span></li>
+               <li><img src="imgs/han.png" alt="한겨례"><span class="blind">한겨례</span></li>
+               <li><img src="imgs/inews.png" alt="아이뉴스"><span class="blind">아이뉴스</span></li>
+               <li><img src="imgs/joongang.png" alt="중앙일보"><span class="blind">중앙일보</span></li>
+            </ul>
+            <span class="news__next"><span class="blind">다음</span></span>
+         </div>
+         <div class="today__read">
+            <div class="read__top">
+               <div class="top__left">
+                  <span class="top__title">오늘 읽을만한 글</span>
+                  <span class="top__subtitle">주제별로 분류된 다양한 글 모음</span>
+               </div>
+               <div class="top__right">
+                  <span class="top__count">684</span>
+                  <span class="top__write">개의 글</span>
+                  <span class="top__img"></span>
+                  <span class="top__set">관심주제 설정</span>
+               </div>
+            </div>
+            <div class="read__nav">
+               <ul>
+                  <li>엔터</li>
+                  <li>스포츠</li>
+                  <li>자동차</li>
+                  <li>웹툰</li>
+                  <li>경제</li>
+                  <li>추천<span class="read__dot"></span>구독</li>
+                  <li>레시피</li>
+                  <li class="active">리빙</li>
+               </ul>
+               <span class="read__before"><span class="blind">이전</span></span>
+               <span class="read__next"><span class="blind">다음</span></span>
+            </div>
+            <ul class="living__list-one living">
+               <li class="living__item">
+                  <div class="living__imgbox">
+                     <a href="#">
+                        <img src="imgs/living_one.jpg" alt="신축 전원주택 라이프" class="living__img">
+                     </a>
+                  </div>
+                  <a href="#" class="living__description">
+                     <h4>리빙</h4>
+                     <h3>신축 전원주택 라이프</h3>
+                     <p>
+                        안녕하세요 평생 아파트 생활 하다가 주택으로 이사온 지 두 달 째 입니다 집 짓는 것도, 인테리어도, 주택 생활도 모두모두 처음이라 어딘지 어설픈 구석이 많은데요, 편안하게
+                        봐주세요!!ㅋㅋ 어젯밤 바람이 많이 불고 첫눈이 오더니 하늘이 맑습니다 요새 다시 미세먼지가 있어서 이런 하늘 유난히 기분 좋아요 현관입니다 현관바닥은 집 1층 바닥과
+                        동일한 밝은 타일
+                     </p>
+                     <div class="source__box">
+                        <span class="source__inner">에어</span>
+                        <span class="source__dot"></span>
+                        <span class="source__date">1주일 전</span>
+                     </div>
+                  </a>
+               </li>
+               <li class="living__item">
+                  <div class="living__imgbox">
+                     <a href="#">
+                        <img src="imgs/living_two.jpg" alt="철거부터 도배까지, 예비 복학생의 방 꾸미기 프로젝트" class="living__img">
+                     </a>
+                  </div>
+                  <a href="#" class="living__description">
+                     <h4>리빙</h4>
+                     <h3>철거부터 도배까지, 예비 복학생의 방 꾸미기 프로젝트</h3>
+                     <p>
+                        첫 프로젝트이자 버킷리스트 기록의 마지막 에피소드네요 오늘은 바닥(몰딩,카펫)이랑 인테리어 관련해서 기록해볼게요 :) 걸레받이 몰딩& 정배할 때 붙인 실크벽지 아래쪽이
+                        깔끔하지 않아서 어떻게 보수를 할 까 생각하다가 걸레받이(몰딩)이 생각났다 바닥에 하는 몰딩은 크게 2가지로 나뉜다 1. 일자몰딩(장판 홈x) 2. 걸레받이(장판 홈o)
+                        소재도 pvc(플라
+                     </p>
+                     <div class="source__box">
+                        <span class="source__inner">뱅</span>
+                        <span class="source__dot"></span>
+                        <span class="source__date">3주일 전</span>
+                     </div>
+                  </a>
+               </li>
+               <li class="living__item">
+                  <div class="living__imgbox">
+                     <a href="#">
+                        <img src="imgs/living_three.jpg" alt="홈 오피스 비포 앤 애프터" class="living__img">
+                     </a>
+                  </div>
+                  <a href="#" class="living__description">
+                     <h4>리빙</h4>
+                     <h3>홈 오피스 비포 앤 애프터</h3>
+                     <p>
+                        23평 아파트 거실인테리어 가구 구매 없이 재배치로 홈오피스 거실로 바꾸기👩🏻💻 Before &amp; After / 기록용 올해 6월부터 주 5일 내내 재택근무 중인
+                        나. 원래는 안방 옆 확장공간을 이렇게 방처럼 쓰고, 책상을 두고 업무공간으로 사용했었다. (서비스 면적이 좀더 있어서 베란다 치고 꽤 넓은편) 이방은 일할 때 이렇게
+                        아름다운 창밖 풍경을 볼
+                     </p>
+                     <div class="source__box">
+                        <span class="source__inner">nimoS2</span>
+                        <span class="source__dot"></span>
+                        <span class="source__date">1주일 전</span>
+                     </div>
+                  </a>
+               </li>
+               <li class="living__item">
+                  <div class="living__imgbox">
+                     <a href="#">
+                        <img src="imgs/living_four.jpg" alt="도시적 공간으로 보이도록 설계한 목조주택" class="living__img">
+                     </a>
+                  </div>
+                  <a href="#" class="living__description">
+                     <h4>리빙</h4>
+                     <h3>도시적 공간으로 보이도록 설계한 목조주택</h3>
+                     <p>
+                        23평 아파트 거실인테리어 가구 구매 없이 재배치로 홈오피스 거실로 바꾸기👩🏻💻 Before After / 기록용 올해 6월부터 주 5일 내내 재택근무 중인 나.
+                        원래는 안방 옆 확장공간을 이렇게 방처럼 쓰고, 책상을 두고 업무공간으로 사용했었다. (서비스 면적이 좀더 있어서 베란다 치고 꽤 넓은편) 이방은 일할 때 이렇게 아름다운
+                        창밖 풍경을 볼
+                     </p>
+                     <div class="source__box">
+                        <span class="source__inner">전원주택라이프</span>
+                        <span class="source__dot"></span>
+                        <span class="source__date">4주일 전</span>
+                     </div>
+                  </a>
+               </li>
+            </ul>
+
+            <ul class="living__list-two living middle__line ">
+               <li class="living__item">
+                  <div class="living__imgbox">
+                     <a href="#">
+                        <img src="imgs/living2-one.jpg" alt="자리 차지하지 않고 깔끔하게 보관하는 수납팁" class="living__img">
+                     </a>
+                  </div>
+                  <a href="#" class="living__description">
+                     <h4>리빙</h4>
+                     <h3>자리 차지하지 않고 깔끔하게 보관하는 수납팁</h3>
+                     <p>
+                        팬트리처럼 사용하고 있는 저희 집 보조주방 하부장의 모습이에요. 바구니에 담아두면 자리를 많이 차지하고 세로로 쌓으면 와르르 무너지기 쉬운 컵라면. 선반 아래에 틈새 공간을
+                        활용해 부피감 있는 컵라면을 쏙쏙~공중부양으로 깔끔하게 보관/수납하는 방법 소개할게요. 다이소에서 구입한 전선 보호관. 전선보호관을 ㄷ자로 서로 마주 보게 부착해서 컵라면
+                        정리대를 만들
+                     </p>
+                     <div class="source__box">
+                        <span class="source__inner">핑크베베</span>
+                        <span class="source__dot"></span>
+                        <span class="source__date">1개월 전</span>
+                     </div>
+                  </a>
+               </li>
+               <li class="living__item">
+                  <div class="living__imgbox">
+                     <a href="#">
+                        <img src="imgs/living2-two.jpg" alt="캡 모자 망가지지 않게 세탁하는 방법 #살림꿀팁" class="living__img">
+                     </a>
+                  </div>
+                  <a href="#" class="living__description">
+                     <h4>리빙</h4>
+                     <h3>캡 모자 망가지지 않게 세탁하는 방법 #살림꿀팁</h3>
+                     <p>
+                        어린이집이나 유치원을 다니는 아이가 있는 엄마들이라면 등원때 꼭 쓰게 되는게 모자죠. 저는 모자가 어울리지 않아 잘 쓰고 다니지 않는데도 아이를 데려다주는 아침에는 머리를
+                        감을 시간이 부족하니 모자를 꼭 써야하거든요.ㅋㅋ 모자 잘 어울리시는 분들보면 그렇게 부럽더라고요~힝 그래서 가지고 있는 캡모자가 있는데 여름부터 내내 쓰고 다녔더니
+                        최근들어 쿰쿰한 냄새
+                     </p>
+                     <div class="source__box">
+                        <span class="source__inner">아라</span>
+                        <span class="source__dot"></span>
+                        <span class="source__date">2주일 전</span>
+                     </div>
+                  </a>
+               </li>
+               <li class="living__item">
+                  <div class="living__imgbox">
+                     <a href="#">
+                        <img src="imgs/living2-three.jpg" alt="계절마다 바뀌는 홈스타일링" class="living__img">
+                     </a>
+                  </div>
+                  <a href="#" class="living__description">
+                     <h4>리빙</h4>
+                     <h3>계절마다 바뀌는 홈스타일링</h3>
+                     <p>
+                        작은 거실이라도 괜찮아 :) 계절마다 바뀌는 거실홈스타일링, 도화지 같은 집 작은집 활용 시리즈, 두번째는 거실편🖤 20평대 비확장거실 랜선집들이❣️ 파티룸이 되기도
+                        하고, 영화관이 되기도 하고, 식물원이 되기도 하는 나의 거실. 제일 넓은 공간이기 때문에 멀티룸으로 다양하게 사용하고있다. 계절마다 조금씩 바꾸었던 소품과 가구들 그리고
+                        라이프스타일 위주로
+                     </p>
+                     <div class="source__box">
+                        <span class="source__inner">나나씨</span>
+                        <span class="source__dot"></span>
+                        <span class="source__date">1주일 전</span>
+                     </div>
+                  </a>
+               </li>
+               <li class="living__item">
+                  <div class="living__imgbox">
+                     <a href="#">
+                        <img src="imgs/living2-four.jpg" alt="서울에 입주한 첫 집 기록" class="living__img">
+                     </a>
+                  </div>
+                  <a href="#" class="living__description">
+                     <h4>리빙</h4>
+                     <h3>서울에 입주한 첫 집 기록</h3>
+                     <p>
+                        2021.11.29 입주 한 서울 첫집 실측하고 도면 까지 치는 정성 조립식 가구의 악몽 첫번째 배치 저 벽과 책상이 딱 안맞아서 신경쓰였는데 결국 얼마 못 간 배치 두번째
+                        배치 이때 배치가 사진이 잘 나와서 젤 좋아했음 세번째 배치 아무래도 침대가 안방에 있는게 안정감있어서 이리저리 옮겼다 좋아하는 공간 네번째 배치 영화관 처럼 쓰고 싶어서
+                        쇼파도 사고
+                     </p>
+                     <div class="source__box">
+                        <span class="source__inner">헨</span>
+                        <span class="source__dot"></span>
+                        <span class="source__date">1주일 전</span>
+                     </div>
+                  </a>
+               </li>
+            </ul>
+
+            <div class="read__hot">
+               <h5>오늘 가장 따뜻한 클릭</h5>
+               <span class="hot__arrow"></span>
+               <ul>
+                  <li>
+                     <a href="#">
+                        <div class="hot__img">
+                           <img src="imgs/hot-one.jpg" alt="내 손 안의 수제비누로 만드는 자립의 시작">
+                           <span class="hot__badge">펀딩</span>
+                        </div>
+                        <p class="hot__title">내 손 안의 수제비누로 만드는 자립의 시작</p>
+                        <span class="hot__subtitle">직지드림플러스보호작업장</span>
+                        <span class="source__dot"></span>
+                        <span class="hot__percent">265%</span>
+                        <span class="hot__goal">달성</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                        <div class="hot__img">
+                           <img src="imgs/hot-two.jpg" alt="다문화 가정을 응원하는 다양한 고양이 굿즈">
+                           <span class="hot__badge">펀딩</span>
+                        </div>
+                        <p class="hot__title">다문화 가정을 응원하는 다양한 고양이 굿즈</p>
+                        <span class="hot__subtitle">더스페이스프렌즈</span>
+                        <span class="source__dot"></span>
+                        <span class="hot__percent">230%</span>
+                        <span class="hot__goal">달성</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                        <div class="hot__img">
+                           <img src="imgs/hot-three.jpg" alt="내 집은 고시원, 혼자 새해를 맞이합니다.">
+                           <span class="hot__badge">펀딩</span>
+                        </div>
+                        <p class="hot__title">내 집은 고시원, 혼자 새해를 맞이합니다</p>
+                        <span class="hot__subtitle">도촌종합사회복지관</span>
+                        <span class="source__dot"></span>
+                        <span class="hot__percent">3.084.400원</span>
+                        <span class="hot__goal">기부</span>
+                     </a>
+                  </li>
+               </ul>
+               <a href=""><span class="hot__next"></span></a>
+               <div class="hot__more">
+                  <span class="more__btn"></span>
+                  <span class="text__more">새로운 글 더보기</span>
+               </div>
+            </div>
+
+         </div>
+      </section>
+
+      <section id="main__right">
+         <div id="right__login">
+            <span class="blind">로그인</span>
+            <h6>네이버를 더 안전하고 편리하게 이용하세요</h6>
+            <div class="login__btn">
+               <span class="login__logo"></span>
+               <span class="login__text">로그인</span>
+            </div>
+            <div class="login__bottom">
+               <div class="login__left">
+                  <span class="login__img"></span>
+                  <span>아이디</span>
+                  <span class="login__dot"></span>
+                  <span>비밀번호찾기</span>
+               </div>
+               <div class="login__right">
+                  <span class="login__human"></span>
+                  <span>회원가입</span>
                </div>
             </div>
          </div>
-      </div>
+         <div id="right__issue">
+            <div class="issue__content">
+               <span class="issue">이슈</span>
+               <span class="issue__covid">코로나바이러스-19 현황</span>
+            </div>
+            <div class="issue__btn">
+               <a href="#" class="before__btn">
+                  <span class="issue__before"></span>
+                  <span class="blind">이전</span>
+               </a>
+               <a href="#" class="next__btn">
+                  <span class="issue__next"></span>
+                  <span class="blind">다음</span>
+               </a>
+            </div>
+         </div>
+         <div id="right__ad">
+            <img src="imgs/side-ad.jpg" alt="사이드 광고">
+         </div>
+         <div id="right__shopping">
+            <iframe id="shopping__view" title="쇼핑캐스트"
+               src="https://www.naver.com/shoppingbox/shoppingboxnew/main.nhn?mode=plusdealdomain=N"></iframe>
+         </div>
+      </section>
    </main>
 
    <footer>
-      <div>공지사항</div>
-      <div>Creators</div>
-      <div>회사소개</div>
+      <div class="main__area">
+         <div id="footer__ad">
+            <div class="ad__item">
+               <iframe id="da_public_left_tgtLREC" width="350" height="86" frameborder="no" scrolling="no" tabindex="-1"
+                  style="border: 0px; vertical-align: bottom;"
+                  src="https://siape.veta.naver.com/fxshow?su=SU10641&amp;nrefreshx=0#frameId=da_public_left_tgtLREC&amp;origin=https%3A%2F%2Fwww.naver.com&amp;msgToken=2193031339.661105&amp;isFluid=false&amp;runtime=NDPSDK"></iframe>
+            </div>
+            <div class="ad__item">
+               <iframe id="da_public_right_tgtLREC" width="350" height="86" frameborder="no" scrolling="no"
+                  tabindex="-1" style="border: 0px; vertical-align: bottom;"
+                  src="https://siape.veta.naver.com/fxshow?su=SU10642&amp;nrefreshx=0#frameId=da_public_right_tgtLREC&amp;origin=https%3A%2F%2Fwww.naver.com&amp;msgToken=1780910681.2167473&amp;isFluid=false&amp;runtime=NDPSDK"></iframe>
+            </div>
+            <div class="ad__item">
+               <iframe id="veta_time2_tgtLREC" width="350" height="86" frameborder="no" scrolling="no" tabindex="-1"
+                  style="border: 0px; vertical-align: bottom;"
+                  src="https://siape.veta.naver.com/fxshow?su=SU10640&amp;nrefreshx=0#frameId=veta_time2_tgtLREC&amp;origin=https%3A%2F%2Fwww.naver.com&amp;msgToken=2261721327.747686&amp;isFluid=false&amp;runtime=NDPSDK"></iframe>
+            </div>
+         </div>
+         <div id="footer__notice">
+            <div class="notice__area">
+               <a href="#">
+                  <span class="notice__title">공지사항</span>
+               </a>
+               <a href="#">
+                  <span class="notice__content">네이버 '개인정보 처리방침' 변경에 대한 안내 말씀드립니다.</span>
+               </a>
+            </div>
+            <a href="#">
+               <span class="service__more">서비스 전체보기</span>
+               <span class="service__arrow"></span>
+            </a>
+         </div>
+         <div id="footer__company">
+            <div class="partner__menu">
+               <div class="company__partner">
+                  <h3 class="partner__title">Creators</h3>
+                  <div class="partner__item">
+                     <span>크리에이터</span>
+                     <span class="divider"></span>
+                     <span>스몰비지니스</span>
+                  </div>
+               </div>
+               <div class="company__partner">
+                  <h3 class="partner__title">Partner</h3>
+                  <div class="partner__item">
+                     <span>SME 풀케어 시스템</span>
+                     <span class="divider"></span>
+                     <span>비즈니스<span></span>광고</span>
+                     <span class="divider"></span>
+                     <span>스토어 개설</span>
+                     <span class="divider"></span>
+                     <span>지역업체 등록</span>
+                     <span class="divider"></span>
+                     <span>엑스퍼트 등록</span>
+                  </div>
+               </div>
+               <div class="company__partner">
+                  <h3 class="partner__title">Developers</h3>
+                  <div class="partner__item">
+                     <span>네이버 개설자 센터</span>
+                     <span class="divider"></span>
+                     <span>오픈 API</span>
+                     <span class="divider"></span>
+                     <span>오픈소스</span>
+                     <span class="divider"></span>
+                     <span>네이버 D2</span>
+                     <span class="divider"></span>
+                     <span>네이버 D2SF</span>
+                     <span class="divider"></span>
+                     <span>네이버 랩스</span>
+                  </div>
+               </div>
+            </div>
+            <div class="service__box">
+               <div class="service__item">
+                  <div class="service__info">
+                     <strong>웨일 브라우저</strong>
+                     <a href="#">다운받기</a>
+                  </div>
+                  <a href="#">
+                     <img src="imgs/browser.png" alt="">
+                  </a>
+               </div>
+               <div class="service__item">
+                  <div class="service__info">
+                     <strong>프로젝트 꽃</strong>
+                     <a href="#">바로가기</a>
+                  </div>
+                  <a href="#">
+                     <img src="imgs/project.png" alt="">
+                  </a>
+               </div>
+            </div>
+         </div>
+         <div id="footer__menu">
+            <h3 class="blind">네이버 정책 및 약관</h3>
+            <ul>
+               <li>
+                  <a href="#">회사소개</a>
+               </li>
+               <li>
+                  <a href="#">인재채용</a>
+               </li>
+               <li>
+                  <a href="#">제휴제안</a>
+               </li>
+               <li>
+                  <a href="#">이용약관</a>
+               </li>
+               <li>
+                  <a href="#"><strong>개인정보처리방침</strong></a>
+               </li>
+               <li>
+                  <a href="#">청소년보호정책</a>
+               </li>
+               <li>
+                  <a href="#">네이버 정책</a>
+               </li>
+               <li>
+                  <a href="#">고객센터</a>
+               </li>
+            </ul>
+            <span class="naver-company">
+               <a href="https://www.navercorp.com" target="_blank">ⓒ NAVER Corp.</a>
+            </span>
+         </div>
+      </div>
    </footer>
 </body>
 
